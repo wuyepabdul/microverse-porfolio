@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: #191765;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 25px 24px;
+  letter-spacing: 0.03em;
+}
+
+nav > header {
+  color: #fff;
+  position: static;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.padding-round {
+  padding: 10px 12px 10px 12px;
+}
+
+/* headline */
+.headline {
+  position: absolute;
+  top: 40px;
+  background-image: url("./images/Ellipse18.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.37px;
+}
+
+.headline-ellipse {
+  padding: 30px 30px;
+}
+
+.intro {
+  background-image: url("./images/small_ellipse.svg");
+  background-position: right top 180px;
+  background-repeat: no-repeat;
+  padding: 25px 24px;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  color: #c8c8d4;
+}
+
+hr {
+  border: 1px solid #696364;
+}
+
+h1 {
+  color: #7d73fc;
+  font-size: 48px;
+  line-height: 72px;
+  position: static;
+  width: 327px;
+  height: 55px;
+  left: 0;
+  top: 0;
+}
+
+h2 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+  width: 327px;
+  height: 55px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  text-align: start;
+  letter-spacing: 0.37px;
+}
+
+.lists > div > {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  text-align: start;
+  letter-spacing: 0.37px;
+}
+
+.lists > div > ul {
+  list-style-type: none;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 24px;
+  width: 120px;
+}
+
+.social-media-links > li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav > div > ul > li:first-child {
+  color: #9490ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
