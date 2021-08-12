@@ -77,6 +77,16 @@ h2 {
   height: 55px;
 }
 
+.social-media ul {
+  padding: 0;
+  justify-content: space-between;
+}
+
+.social-media li {
+  list-style: none;
+  display: inline-block;
+}
+
 .lists {
   width: 100%;
   flex-direction: row;
@@ -104,18 +114,7 @@ h2 {
 
 .social-media {
   width: 200px;
-}
-
-.social-media ul {
-  padding: 0;
-  justify-content: space-between;
-}
-
-.social-media li {
-  list-style: none;
-  display: inline-block;
-
-  /* padding: 0 5px; */
+  height: 40px;
 }
 
 .d-flex {
@@ -127,6 +126,7 @@ h2 {
   align-items: center;
   text-align: center;
 }
+
 .space-between {
   justify-content: space-between;
 }
