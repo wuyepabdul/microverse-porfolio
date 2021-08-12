@@ -9,16 +9,16 @@ body {
   font-style: normal;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
   padding: 25px 24px;
   letter-spacing: 0.03em;
 }
 
-nav > header {
+.nav-bar > a {
   color: #fff;
   position: static;
   font-weight: 500;
@@ -36,10 +36,7 @@ nav > header {
   top: 40px;
   background-image: url("./images/Ellipse18.svg");
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.37px;
 }
 
@@ -54,8 +51,6 @@ nav > header {
   padding: 25px 24px;
   font-size: 20px;
   line-height: 28px;
-  align-items: center;
-  text-align: center;
   color: #c8c8d4;
 }
 
@@ -83,16 +78,7 @@ h2 {
 }
 
 .lists {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: baseline;
-  text-align: start;
-  letter-spacing: 0.37px;
-}
-
-.lists > div > {
-  display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
@@ -105,15 +91,10 @@ h2 {
   flex-wrap: wrap;
   font-size: 15px;
   line-height: 24px;
-  width: 120px;
+  width: 100px;
 }
 
-.social-media-links > li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-nav > div > ul > li:first-child {
+.lists > div > ul > li:first-child {
   color: #9490ff;
   font-weight: 500;
   font-size: 12px;
@@ -122,6 +103,30 @@ nav > div > ul > li:first-child {
 }
 
 .social-media {
+  width: 200px;
+}
+
+.social-media ul {
+  padding: 0;
+  justify-content: space-between;
+}
+
+.social-media li {
+  list-style: none;
+  display: inline-block;
+
+  /* padding: 0 5px; */
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+  text-align: center;
+}
+.space-between {
+  justify-content: space-between;
 }
