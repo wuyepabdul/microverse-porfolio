@@ -9,6 +9,11 @@ body {
   font-style: normal;
 }
 
+section {
+  min-height: 100%;
+  margin-bottom: 5rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -32,12 +37,12 @@ a {
 
 /* headline */
 .headline {
-  position: absolute;
   top: 40px;
   background-image: url("./images/Ellipse18.svg");
   background-repeat: no-repeat;
   flex-direction: column;
   letter-spacing: 0.37px;
+  min-height: 100vh;
 }
 
 .headline-ellipse {
@@ -63,7 +68,7 @@ h1 {
   font-size: 48px;
   line-height: 72px;
   position: static;
-  width: 327px;
+  /* width: 327px; */
   height: 55px;
   left: 0;
   top: 0;
@@ -73,7 +78,6 @@ h2 {
   color: #fff;
   font-size: 32px;
   line-height: 44px;
-  width: 327px;
   height: 55px;
 }
 
@@ -129,4 +133,12 @@ h2 {
 
 .space-between {
   justify-content: space-between;
+}
+
+/* worls section */
+.works-section header {
+}
+
+.card {
+  flex-direction: column;
 }
