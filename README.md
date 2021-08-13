@@ -2,6 +2,16 @@
 
 A Porfolio to help showcase my skills and achievments to employers
 
+## Screenshots
+
+<img src="images/mobile-view.png" >
+
+<img src="images/mobile-view2.png">
+
+<img src="images/middle-section1.png">
+
+<img src="images/middle-section2.png">
+
 ## Built With
 
 - HTML
