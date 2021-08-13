@@ -135,10 +135,6 @@ h2 {
   justify-content: space-between;
 }
 
-/* worls section */
-.works-section header {
-}
-
 .card {
   flex-direction: column;
 }
