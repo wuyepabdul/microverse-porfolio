@@ -111,6 +111,18 @@ section {
   letter-spacing: 0.37px;
 }
 
+.tags > ul {
+  color: #fff;
+  padding-left: 0;
+}
+
+.tags > ul > li {
+  border-right: 1px solid #696364;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+}
+
 .lists > div > ul {
   flex-wrap: wrap;
   font-size: 15px;
@@ -180,19 +192,6 @@ section {
 .tags {
   display: flex;
   margin-top: 24px;
-}
-
-.tags > ul {
-  color: #fff;
-  padding-left: 0;
-}
-
-.tags > ul > li {
-  border-right: 1px solid #696364;
-  font-size: 15px;
-  font-weight: 500;
-
-  padding: 10px;
 }
 
 button {
