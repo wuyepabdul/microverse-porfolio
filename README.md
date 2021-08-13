@@ -8,8 +8,6 @@ A Porfolio to help showcase my skills and achievments to employers
 
 <img src="images/mobile-view2.png">
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 ## Built With
 
 - HTML
