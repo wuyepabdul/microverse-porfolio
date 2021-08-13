@@ -225,3 +225,20 @@ button:hover {
   text-align: left;
   align-items: flex-start;
 }
+
+/* About section */
+
+.about {
+  flex-direction: column;
+  letter-spacing: 0.37px;
+  color: #fff;
+}
+
+.about-icons {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.intro > div > ul {
+  padding-left: 0;
+}
