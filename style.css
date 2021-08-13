@@ -10,11 +10,6 @@ body {
   font-weight: 400;
 }
 
-section {
-  min-height: 100%;
-  margin-bottom: 5rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -72,13 +67,10 @@ section {
 
 .headline {
   background-image: url("./images/headline-mobile.svg");
-  top: 40px;
-  background-image: url("./images/Ellipse18.svg");
   background-repeat: no-repeat;
   background-size: contain;
   flex-direction: column;
   letter-spacing: 0.37px;
-  min-height: 100vh;
 }
 
 .headline > div > h2 {
@@ -94,25 +86,6 @@ section {
 
 .social-media {
   width: 200px;
-hr {
-  border: 1px solid #696364;
-}
-
-h1 {
-  color: #7d73fc;
-  font-size: 48px;
-  line-height: 72px;
-  position: static;
-  height: 55px;
-  left: 0;
-  top: 0;
-}
-
-h2 {
-  color: #fff;
-  font-size: 32px;
-  line-height: 44px;
-  height: 55px;
 }
 
 .social-media ul {
@@ -246,6 +219,4 @@ button:hover {
 .align-left {
   text-align: left;
   align-items: flex-start;
-.card {
-  flex-direction: column;
 }
