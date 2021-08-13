@@ -39,7 +39,6 @@ h3 {
 }
 
 section {
-  /* margin-bottom: 7rem; */
   min-height: 100vh;
 }
 
@@ -63,9 +62,11 @@ section {
   padding: 10px 12px 10px 12px;
 }
 
-.works-section h2 {
+.works-section h1 {
   width: 200px;
   padding: 0 24px;
+  color: #9490ff;
+  font-size: 40px;
 }
 
 /* headline */
@@ -181,13 +182,17 @@ section {
   margin-top: 24px;
 }
 
-.tags > div {
+.tags > ul {
   color: #fff;
+  padding-left: 0;
+}
+
+.tags > ul > li {
   border-right: 1px solid #696364;
   font-size: 15px;
   font-weight: 500;
+
   padding: 10px;
-  justify-content: center;
 }
 
 button {
