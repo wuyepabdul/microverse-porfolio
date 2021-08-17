@@ -264,3 +264,16 @@ button:hover {
   width: 100%;
   box-sizing: border-box;
 }
+
+.input-padding {
+  padding: 15px 16px;
+}
+
+.contact-section textarea {
+  width: 327px;
+  height: 148px;
+}
+
+.contact-section button {
+  width: 65px;
+}
