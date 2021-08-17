@@ -40,7 +40,8 @@ Run the project
 
 ## Authors
 
-- [@Wuyep Abdul](https://www.github.com/wuyepabdul)
+- GitHub:[@Wuyep Abdul](https://www.github.com/wuyepabdul)
+- GitHub: [@ifnotlily](https://github.com/ifnotlily)
 
 ## License
 
