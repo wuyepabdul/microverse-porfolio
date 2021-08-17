@@ -277,3 +277,10 @@ button:hover {
 .contact-section button {
   width: 65px;
 }
+
+.email{
+  color: #fff;
+}
+.footer > .icons > ul{
+padding: 0;
+}
