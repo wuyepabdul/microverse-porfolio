@@ -260,6 +260,10 @@ button:hover {
   color: #f5f5ff;
 }
 
+.contact-section form {
+  flex-direction: column;
+}
+
 .full-width {
   width: 100%;
   box-sizing: border-box;
@@ -270,7 +274,6 @@ button:hover {
 }
 
 .contact-section textarea {
-  width: 327px;
   height: 148px;
 }
 
