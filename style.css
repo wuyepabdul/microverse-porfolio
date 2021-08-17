@@ -20,6 +20,7 @@ ul {
 
 hr {
   border: 1px solid #696364;
+  margin-top: 20px;
 }
 
 h1 {
@@ -38,8 +39,8 @@ h3 {
   font-size: 32px;
 }
 
-section {
-  min-height: 100vh;
+input {
+  margin-bottom: 24px;
 }
 
 .padding {
@@ -52,7 +53,6 @@ section {
 
 .nav-bar > a {
   color: #fff;
-  position: static;
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
@@ -233,7 +233,11 @@ button:hover {
   color: #fff;
 }
 
-.about-icons {
+.about h1 {
+  margin: 0;
+}
+
+.icons {
   width: 200px;
   margin: 0 auto;
 }
