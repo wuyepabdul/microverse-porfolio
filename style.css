@@ -258,10 +258,11 @@ button:hover {
 
 /* contact section */
 
-.contact-section h1 {
+.reference::before {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
+  content: "CONTACT US";
 }
 
 .contact-section p {
@@ -297,4 +298,242 @@ button:hover {
 
 .footer > .icons > ul {
   padding: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 920px) {
+  .headline {
+    background-image: url("./images/two-circles.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: column;
+    letter-spacing: 0.37px;
+    margin-top: 65px;
+  }
+
+  .headline h1 {
+    font-size: 90px;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
+
+  .headline > div > h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 0px;
+  }
+
+  .headings {
+    height: 142px;
+  }
+
+  .intro {
+    width: 447px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #c8c8d4;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .floated {
+    visibility: visible;
+    display: block;
+  }
+
+  .social-media ul {
+    padding: 0;
+    width: 200px;
+  }
+
+  .social-media li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .lists {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: baseline;
+    text-align: start;
+    letter-spacing: 0.37px;
+  }
+
+  .tags > ul > li {
+    border-right: 1px solid #696364;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  .lists > div > ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 24px;
+    width: 100px;
+  }
+
+  /* works section */
+
+  .works-section {
+    background-image: url("./images/Group\ 65@2x.png");
+    background-size: contain;
+  }
+
+  .works-section > div > h1 {
+    width: 500px;
+    font-size: 64px;
+  }
+
+  .card-container {
+    box-sizing: border-box;
+  }
+
+  .card {
+    justify-content: space-between;
+    align-items: center;
+    height: 680px;
+    width: 100%;
+  }
+
+  .card > img {
+    width: 100%;
+    height: 236px;
+    margin-bottom: 88px;
+  }
+
+  .card-body {
+    align-items: flex-start;
+    width: 327px;
+  }
+
+  .card-body p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .tags {
+    display: flex;
+    margin-top: 24px;
+  }
+
+  /* About section */
+
+  .about {
+    flex-direction: row;
+    letter-spacing: 0.37px;
+    color: #fff;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .about h1 {
+    margin: 0;
+    font-size: 90px;
+  }
+
+  .about p {
+    font-size: 30px;
+    text-align: left;
+    line-height: 44px;
+  }
+
+  .about h4 {
+    font-size: 40px;
+  }
+
+  .icons {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .icons img {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .intro > div > ul {
+    padding-left: 0;
+  }
+
+  /* contact section */
+
+  .contact-section p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #f5f5ff;
+    width: 684px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .contact-section form {
+    flex-direction: column;
+    margin-top: 88px;
+  }
+
+  .reference::before {
+    font-size: 40px;
+    content: "Let's Chat";
+  }
+
+  .full-width {
+    width: 684px;
+    box-sizing: border-box;
+  }
+
+  .input-padding {
+    padding: 15px 16px;
+  }
+
+  .contact-section textarea {
+    height: 148px;
+  }
+
+  .contact-section button {
+    margin-top: 101px;
+    margin-bottom: 118px;
+    width: 160px;
+  }
+
+  /* footer */
+
+  .footer {
+    border-top: 1px solid #3a3837;
+  }
+
+  .footer .icons {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .footer > .icons > ul {
+    padding: 0;
+  }
+
+  .footer .icons li {
+    padding: 0 8px;
+  }
+
+  .footer .icons img {
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .email {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 15px;
+  }
 }
