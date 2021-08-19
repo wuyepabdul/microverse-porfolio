@@ -10,6 +10,10 @@ body {
   font-weight: 400;
 }
 
+* {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
 }
@@ -68,6 +72,10 @@ input {
   padding: 0 24px;
   color: #9490ff;
   font-size: 40px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 /* headline */
@@ -168,40 +176,12 @@ input {
   background-size: cover;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-}
-
 .card {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 680px;
-  width: 327px;
+  margin-bottom: 50px;
 }
 
-.card > img {
+.card-image img {
   width: 100%;
-  height: 236px;
-}
-
-.card-body {
-  align-items: flex-start;
-  width: 327px;
-}
-
-.card-body p {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 400;
-}
-
-.tags {
-  display: flex;
-  margin-top: 24px;
 }
 
 button {
@@ -302,7 +282,11 @@ button:hover {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 920px) {
+@media (min-width: 980px) {
+  .padding {
+    padding: 0 142px;
+  }
+
   .headline {
     background-image: url("./images/two-circles.png");
     background-repeat: no-repeat;
@@ -386,42 +370,39 @@ button:hover {
     background-size: contain;
   }
 
-  .works-section > div > h1 {
-    width: 500px;
-    font-size: 64px;
-  }
-
-  .card-container {
-    box-sizing: border-box;
+  .works-section h1 {
+    padding: 0;
+    width: 100%;
   }
 
   .card {
-    justify-content: space-between;
-    align-items: center;
-    height: 680px;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    margin-bottom: 88px;
+    justify-content: center;
+  }
+
+  .card-image {
     width: 100%;
   }
 
-  .card > img {
+  .card-image img {
     width: 100%;
-    height: 236px;
-    margin-bottom: 88px;
+    height: 100%;
   }
 
   .card-body {
-    align-items: flex-start;
-    width: 327px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 24px;
+    justify-content: space-between;
   }
 
   .card-body p {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 400;
-  }
-
-  .tags {
-    display: flex;
-    margin-top: 24px;
+    font-size: 15px;
+    width: 400px;
   }
 
   /* About section */
@@ -436,28 +417,27 @@ button:hover {
 
   .about h1 {
     margin: 0;
-    font-size: 90px;
-  }
-
-  .about p {
-    font-size: 30px;
-    text-align: left;
-    line-height: 44px;
-  }
-
-  .about h4 {
     font-size: 40px;
   }
 
+  .about p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .about h4 {
+    font-size: 30px;
+  }
+
   .icons {
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
   }
 
   .icons img {
     font-size: 30px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
   }
 
   .intro > div > ul {
@@ -535,5 +515,65 @@ button:hover {
     color: #fff;
     font-size: 20px;
     padding-left: 15px;
+  }
+}
+
+@media (min-width: 850px) {
+  .padding {
+    padding: 0 140px;
+  }
+
+  /* works section */
+
+  .works-section {
+    background-image: url("./images/Group\ 65@2x.png");
+    background-size: contain;
+  }
+
+  .works-section h1 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    height: 350px;
+    width: 100%;
+    margin-bottom: 88px;
+    justify-content: center;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 24px;
+    justify-content: space-between;
+  }
+
+  .card-body p {
+    font-size: 15px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 600px) {
+  .padding {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 500px) {
+  .padding {
+    padding: 0 80px;
   }
 }
