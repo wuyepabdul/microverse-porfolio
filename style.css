@@ -20,8 +20,7 @@ ul {
 
 hr {
   border: 1px solid #696364;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 h1 {
@@ -37,66 +36,16 @@ h2 {
 
 h3 {
   color: #fff;
-  font-size: 33px;
+  font-size: 32px;
 }
 
 input {
   margin-bottom: 24px;
 }
 
-button {
-  padding: 12px;
-  font-weight: 500;
-  background-color: #7d73fc;
-  margin-top: 12px;
-  color: #fff;
-  border: none;
-}
-
-button:enabled {
-  background: #7d73fc;
-}
-
-button:focus {
-  background: #5e42d7;
-}
-
-button:disabled {
-  background: #2a2b33;
-}
-
-button:hover {
-  background: #7d73fc;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-}
-
-.d-flex {
-  display: flex;
-}
-
-.align-center {
-  align-items: center;
-  text-align: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.align-left {
-  text-align: left;
-  align-items: flex-start;
-}
-
 .padding {
   padding: 25px 24px;
 }
-
-.padding-round {
-  padding: 10px 12px 10px 12px;
-}
-
-/* header section */
 
 .nav-bar {
   letter-spacing: 0.03em;
@@ -107,6 +56,10 @@ button:hover {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
+}
+
+.padding-round {
+  padding: 10px 12px 10px 12px;
 }
 
 .works-section h1 {
@@ -137,20 +90,11 @@ button:hover {
   color: #c8c8d4;
 }
 
-.floated {
-  display: none;
-  justify-content: center;
-}
-
 .social-media {
-  /* width: 100%; */
-  display: block;
+  width: 200px;
 }
 
 .social-media ul {
-  width: 200px;
-  margin: 0 auto;
-  align-items: center;
   padding: 0;
 }
 
@@ -194,6 +138,19 @@ button:hover {
   margin-bottom: 5px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+  text-align: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 /* works section */
 
 .works-section {
@@ -235,6 +192,37 @@ button:hover {
 .tags {
   display: flex;
   margin-top: 24px;
+}
+
+button {
+  padding: 12px;
+  font-weight: 500;
+  background-color: #7d73fc;
+  margin-top: 12px;
+  color: #fff;
+  border: none;
+}
+
+button:enabled {
+  background: #7d73fc;
+}
+
+button:focus {
+  background: #5e42d7;
+}
+
+button:disabled {
+  background: #2a2b33;
+}
+
+button:hover {
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.align-left {
+  text-align: left;
+  align-items: flex-start;
 }
 
 /* About section */
