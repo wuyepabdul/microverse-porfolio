@@ -10,10 +10,6 @@ body {
   font-weight: 400;
 }
 
-* {
-  color: #fff;
-}
-
 a {
   text-decoration: none;
 }
@@ -24,8 +20,7 @@ ul {
 
 hr {
   border: 1px solid #696364;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 h1 {
@@ -52,10 +47,6 @@ input {
   padding: 25px 24px;
 }
 
-.d-grid {
-  display: grid;
-}
-
 .nav-bar {
   letter-spacing: 0.03em;
 }
@@ -67,20 +58,8 @@ input {
   line-height: 16px;
 }
 
-.bars > ul > li {
-  padding: 0 15px;
-}
-
 .padding-round {
   padding: 10px 12px 10px 12px;
-}
-
-.hide {
-  display: none;
-}
-
-.hamburger {
-  display: inline-block;
 }
 
 .works-section h1 {
@@ -88,10 +67,6 @@ input {
   padding: 0 24px;
   color: #9490ff;
   font-size: 42px;
-}
-
-.row-reverse {
-  flex-direction: row-reverse;
 }
 
 /* headline */
@@ -115,19 +90,11 @@ input {
   color: #c8c8d4;
 }
 
-.floated {
-  display: none;
-  justify-content: center;
-}
-
 .social-media {
-  display: block;
+  width: 200px;
 }
 
 .social-media ul {
-  width: 200px;
-  margin: 0 auto;
-  align-items: center;
   padding: 0;
 }
 
@@ -191,12 +158,40 @@ input {
   background-size: cover;
 }
 
-.card {
-  margin-bottom: 50px;
+.card-container {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
 }
 
-.card-image img {
+.card {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 680px;
+  width: 327px;
+}
+
+.card > img {
   width: 100%;
+  height: 236px;
+}
+
+.card-body {
+  align-items: flex-start;
+  width: 327px;
+}
+
+.card-body p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.tags {
+  display: flex;
+  margin-top: 24px;
 }
 
 button {
@@ -253,11 +248,10 @@ button:hover {
 
 /* contact section */
 
-.reference::before {
+.contact-section h1 {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  content: "CONTACT US";
 }
 
 .contact-section p {
@@ -293,335 +287,4 @@ button:hover {
 
 .footer > .icons > ul {
   padding: 0;
-}
-
-/* MEDIA QUERIES */
-
-@media (min-width: 980px) {
-  .hide {
-    display: inline-block;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .padding {
-    padding: 22px 142px;
-  }
-
-  .headline {
-    background-image: url("./images/two-circles.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex-direction: column;
-    letter-spacing: 0.37px;
-    margin-top: 65px;
-  }
-
-  .headline h1 {
-    font-size: 90px;
-    margin: 0;
-    margin-top: 4px;
-    margin-bottom: 24px;
-  }
-
-  .headline > div > h2 {
-    color: #fff;
-    font-size: 40px;
-    margin-top: 0px;
-  }
-
-  .headings {
-    height: 142px;
-  }
-
-  .intro {
-    width: 447px;
-    font-size: 20px;
-    line-height: 28px;
-    color: #c8c8d4;
-  }
-
-  .social-media {
-    width: 100%;
-  }
-
-  .floated {
-    visibility: visible;
-    display: block;
-  }
-
-  .social-media ul {
-    padding: 0;
-    width: 200px;
-  }
-
-  .social-media li {
-    list-style: none;
-    display: inline-block;
-  }
-
-  .lists {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    align-items: baseline;
-    text-align: start;
-    letter-spacing: 0.37px;
-  }
-
-  .tags > ul > li {
-    border-right: 1px solid #696364;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px;
-  }
-
-  .lists > div > ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 15px;
-    line-height: 24px;
-    width: 100px;
-  }
-
-  /* works section */
-
-  .works-section {
-    background-image: url("./images/Group\ 65@2x.png");
-    background-size: contain;
-  }
-
-  .works-section h1 {
-    padding: 0;
-    width: 100%;
-  }
-
-  .card {
-    display: flex;
-    height: 350px;
-    width: 100%;
-    margin-bottom: 88px;
-    justify-content: center;
-  }
-
-  .card-image {
-    width: 100%;
-  }
-
-  .card-image img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 24px;
-    justify-content: space-between;
-  }
-
-  .card-body p {
-    font-size: 15px;
-    width: 400px;
-  }
-
-  /* About section */
-
-  .about {
-    grid-template-columns: auto auto;
-  }
-
-  .about h1 {
-    margin: 0;
-    font-size: 40px;
-  }
-
-  .about p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .about h4 {
-    font-size: 30px;
-  }
-
-  .icons {
-    width: 300px;
-    margin: 0 auto;
-  }
-
-  .icons img {
-    font-size: 30px;
-    width: 20px;
-    height: 20px;
-  }
-
-  .intro > div > ul {
-    padding-left: 0;
-  }
-
-  /* contact section */
-
-  .contact-section {
-    grid-template-columns: auto;
-  }
-
-  .contact-section p {
-    font-size: 20px;
-    line-height: 24px;
-    color: #f5f5ff;
-    width: 684px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  .contact-section form {
-    flex-direction: column;
-    margin-top: 88px;
-  }
-
-  .reference::before {
-    font-size: 40px;
-    content: "Let's Chat";
-  }
-
-  .full-width {
-    width: 684px;
-    box-sizing: border-box;
-  }
-
-  .input-padding {
-    padding: 15px 16px;
-  }
-
-  .contact-section textarea {
-    height: 148px;
-  }
-
-  .contact-section button {
-    margin-top: 101px;
-    margin-bottom: 118px;
-    width: 160px;
-  }
-
-  /* footer */
-
-  .footer {
-    border-top: 1px solid #3a3837;
-  }
-
-  .footer .icons {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-  }
-
-  .footer > .icons > ul {
-    padding: 0;
-  }
-
-  .footer .icons li {
-    padding: 0 8px;
-  }
-
-  .footer .icons img {
-    font-size: 30px;
-    width: 20px;
-    height: 20px;
-  }
-
-  .email {
-    color: #fff;
-    font-size: 20px;
-    padding-left: 15px;
-  }
-}
-
-@media (min-width: 850px) {
-  .padding-round {
-    padding: 10px 12px 10px 12px;
-  }
-
-  .hide {
-    display: inline-block;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .padding {
-    padding: 0 140px;
-  }
-
-  /* works section */
-
-  .works-section {
-    background-image: url("./images/Group\ 65@2x.png");
-    background-size: contain;
-  }
-
-  .works-section h1 {
-    padding: 0;
-    width: 100%;
-  }
-
-  .card {
-    display: flex;
-    height: 350px;
-    width: 100%;
-    margin-bottom: 88px;
-    justify-content: center;
-  }
-
-  .card-image {
-    width: 100%;
-  }
-
-  .card-image img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 24px;
-    justify-content: space-between;
-  }
-
-  .card-body p {
-    font-size: 15px;
-    width: 400px;
-  }
-
-  /* about */
-  .about {
-    grid-template-columns: auto auto;
-  }
-}
-
-@media (min-width: 600px) {
-  .padding-round {
-    padding: 10px 12px 10px 12px;
-  }
-
-  .padding {
-    padding: 0 100px;
-  }
-}
-
-@media (min-width: 500px) {
-  .padding-round {
-    padding: 10px 12px 10px 12px;
-  }
-
-  .padding {
-    padding: 0 80px;
-  }
 }
