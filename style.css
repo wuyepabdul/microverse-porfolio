@@ -52,6 +52,10 @@ input {
   padding: 25px 24px;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .nav-bar {
   letter-spacing: 0.03em;
 }
@@ -63,8 +67,20 @@ input {
   line-height: 16px;
 }
 
+.bars > ul > li {
+  padding: 0 15px;
+}
+
 .padding-round {
   padding: 10px 12px 10px 12px;
+}
+
+.hide {
+  display: none;
+}
+
+.hamburger {
+  display: inline-block;
 }
 
 .works-section h1 {
@@ -105,7 +121,6 @@ input {
 }
 
 .social-media {
-  /* width: 100%; */
   display: block;
 }
 
@@ -283,8 +298,16 @@ button:hover {
 /* MEDIA QUERIES */
 
 @media (min-width: 980px) {
+  .hide {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   .padding {
-    padding: 0 142px;
+    padding: 22px 142px;
   }
 
   .headline {
@@ -408,11 +431,7 @@ button:hover {
   /* About section */
 
   .about {
-    flex-direction: row;
-    letter-spacing: 0.37px;
-    color: #fff;
-    justify-content: space-around;
-    text-align: left;
+    grid-template-columns: auto auto;
   }
 
   .about h1 {
@@ -445,6 +464,10 @@ button:hover {
   }
 
   /* contact section */
+
+  .contact-section {
+    grid-template-columns: auto;
+  }
 
   .contact-section p {
     font-size: 20px;
@@ -519,6 +542,18 @@ button:hover {
 }
 
 @media (min-width: 850px) {
+  .padding-round {
+    padding: 10px 12px 10px 12px;
+  }
+
+  .hide {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   .padding {
     padding: 0 140px;
   }
@@ -564,15 +599,28 @@ button:hover {
     font-size: 15px;
     width: 400px;
   }
+
+  /* about */
+  .about {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media (min-width: 600px) {
+  .padding-round {
+    padding: 10px 12px 10px 12px;
+  }
+
   .padding {
     padding: 0 100px;
   }
 }
 
 @media (min-width: 500px) {
+  .padding-round {
+    padding: 10px 12px 10px 12px;
+  }
+
   .padding {
     padding: 0 80px;
   }
