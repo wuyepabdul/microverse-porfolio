@@ -52,10 +52,6 @@ input {
   padding: 25px 24px;
 }
 
-.about ul {
-  padding: 0;
-}
-
 .d-grid {
   display: grid;
 }
