@@ -18,6 +18,36 @@ a {
   text-decoration: none;
 }
 
+.animate-movement {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  animation-name: logo-movement;
+  animation-duration: 4s;
+}
+
+@keyframes logo-movement {
+  0% {
+    /* left: 0; */
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.card:hover {
+  transform: scale(1.04, 1.04);
+}
+
 ul {
   list-style-type: none;
 }
