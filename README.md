@@ -14,9 +14,11 @@ A Porfolio to help showcase my skills and achievments to employers
 
 <img src="images/mobile-view2.png">
 
-<img src="images/deskto1.png">
+<img src="images/desktop1.png">
 
-<img src="images/deskto2.png">
+<img src="images/desktop2.png">
+
+<img src="images/desktop3.png">
 
 ## Built With
 
