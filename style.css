@@ -18,6 +18,28 @@ a {
   text-decoration: none;
 }
 
+.row {
+  text-align: center;
+}
+
+.blue-stripe {
+  background-color: blue;
+  float: left;
+  width: 33.33%;
+}
+
+.red-stripe {
+  background-color: red;
+  float: left;
+  width: 33.33%;
+}
+
+.green-stripe {
+  background-color: green;
+  float: left;
+  width: 33.33%;
+}
+
 .animate-movement {
   display: inline-block;
   width: 200px;
@@ -658,7 +680,11 @@ button:hover {
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
+  [class*="-stripe"] {
+    width: 100%;
+  }
+
   .nav-bar {
     letter-spacing: 0.03em;
     margin-top: 10px;
