@@ -18,6 +18,55 @@ a {
   text-decoration: none;
 }
 
+.row {
+  text-align: center;
+}
+
+.blue-stripe {
+  background-color: blue;
+  float: left;
+  width: 33.33%;
+}
+
+.red-stripe {
+  background-color: red;
+  float: left;
+  width: 33.33%;
+}
+
+.green-stripe {
+  background-color: green;
+  float: left;
+  width: 33.33%;
+}
+
+.animate-movement {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  animation-name: logo-movement;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+}
+
+@keyframes logo-movement {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 ul {
   list-style-type: none;
 }
@@ -207,10 +256,16 @@ input {
 
 .card {
   margin-bottom: 50px;
+  transition: padding 2s;
 }
 
 .card-image img {
   width: 100%;
+  transition: padding 1s;
+}
+
+.card-image img:hover {
+  padding: 7px;
 }
 
 button {
@@ -220,6 +275,7 @@ button {
   margin-top: 12px;
   color: #fff;
   border: none;
+  transition: padding 1s;
 }
 
 button:enabled {
@@ -236,6 +292,7 @@ button:disabled {
 
 button:hover {
   background: #7d73fc;
+  padding: 12px 24px;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
@@ -306,6 +363,11 @@ button:hover {
 /* MEDIA QUERIES */
 
 @media (min-width: 980px) {
+  .nav-bar {
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+  }
+
   .hide {
     display: inline-block;
   }
@@ -549,6 +611,11 @@ button:hover {
 }
 
 @media (min-width: 850px) {
+  .nav-bar {
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+  }
+
   .padding-round {
     padding: 10px 12px 10px 12px;
   }
@@ -613,7 +680,16 @@ button:hover {
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
+  [class*="-stripe"] {
+    width: 100%;
+  }
+
+  .nav-bar {
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+  }
+
   .padding-round {
     padding: 10px 12px 10px 12px;
   }
