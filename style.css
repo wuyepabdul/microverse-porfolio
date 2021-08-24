@@ -22,24 +22,6 @@ a {
   text-align: center;
 }
 
-.blue-stripe {
-  background-color: blue;
-  float: left;
-  width: 33.33%;
-}
-
-.red-stripe {
-  background-color: red;
-  float: left;
-  width: 33.33%;
-}
-
-.green-stripe {
-  background-color: green;
-  float: left;
-  width: 33.33%;
-}
-
 .animate-movement:hover {
   display: inline-block;
   width: 200px;
@@ -74,6 +56,7 @@ hr {
   border: 1px solid #696364;
   margin-top: 40px;
   margin-bottom: 40px;
+  /* max-width: 100%; */
 }
 
 h1 {
@@ -97,7 +80,7 @@ input {
 }
 
 .padding {
-  padding: 25px 24px;
+  padding: 5px 24px;
 }
 
 .d-grid {
@@ -118,6 +101,7 @@ input {
 .social-media li {
   list-style: none;
   display: inline-block;
+  padding: 0 10px;
 }
 
 .bars > ul > li {
@@ -137,7 +121,7 @@ input {
 }
 
 .works-section h1 {
-  width: 220px;
+  max-width: 220px;
   padding: 0 24px;
   color: #9490ff;
   font-size: 42px;
@@ -192,10 +176,10 @@ input {
 }
 
 .social-media ul {
-  width: 200px;
   margin: 0 auto;
   align-items: center;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .lists {
@@ -235,6 +219,7 @@ input {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .align-center {
@@ -313,7 +298,7 @@ button:hover {
 }
 
 .icons {
-  width: 200px;
+  max-width: 200px;
   margin: 0 auto;
 }
 
@@ -597,7 +582,7 @@ button:hover {
   }
 
   .footer .icons li {
-    padding: 0 8px;
+    padding: 0 5px;
   }
 
   .footer .icons img {
@@ -683,11 +668,7 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
-  [class*="-stripe"] {
-    width: 100%;
-  }
-
+@media (min-width: 768px) {
   .nav-bar {
     letter-spacing: 0.03em;
     margin-top: 10px;
@@ -698,7 +679,7 @@ button:hover {
   }
 
   .padding {
-    padding: 0 100px;
+    padding: 0 40px;
   }
 }
 
@@ -708,6 +689,6 @@ button:hover {
   }
 
   .padding {
-    padding: 0 80px;
+    padding: 0 40px;
   }
 }
