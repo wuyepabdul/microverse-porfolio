@@ -368,6 +368,10 @@ button:hover {
     margin-top: 20px;
   }
 
+  .newt {
+    color: black;
+  }
+
   .hide {
     display: inline-block;
   }
