@@ -30,6 +30,25 @@ a {
   animation-duration: 4s;
 }
 
+.main-conainer {
+  position: relative;
+}
+
+.menuconainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color:#191765;
+  background-image: url('./images/mobile-menu.png');
+}
+
+.img-container img {
+  float: right;
+}
+
 @keyframes logo-movement {
   0% {
     transform: rotate(0deg);
