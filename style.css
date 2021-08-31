@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   background: #191765;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -32,14 +32,6 @@ a {
   position: relative;
   animation-name: logo-movement;
   animation-duration: 4s;
-}
-
-.modal-container {
- background-color: rgba(0, 0, 0, 0.3);
-}
-
-.modal {
-
 }
 
 @keyframes logo-movement {
@@ -153,10 +145,6 @@ input {
   margin: 0;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
 /* mobile menu */
 .main-container {
   position: relative;
@@ -172,7 +160,7 @@ input {
   left: 0;
   z-index: 10;
   background-color: #191765;
-  background-image: url("./images/mobile-menu.png");
+  background-image: url('./images/mobile-menu.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -201,7 +189,7 @@ input {
 /* headline */
 
 .headline {
-  background-image: url("./images/headline-mobile.svg");
+  background-image: url('./images/headline-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
   flex-direction: column;
@@ -287,8 +275,12 @@ input {
 /* works section */
 
 .works-section {
-  background-image: url("./images/works-section-mobile.png");
+  background-image: url('./images/works-section-mobile.png');
   background-size: cover;
+}
+
+.works-section > article:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .card {
@@ -365,7 +357,7 @@ button:hover {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  content: "CONTACT US";
+  content: 'CONTACT US';
 }
 
 .contact-section form {
@@ -399,19 +391,29 @@ button:hover {
 
 /* Modal */
 
-.card-modal {
+/* .card-modal {
   display: flex;
   flex-direction: column;
   height: 350px;
-  width: 70%;
+  width: 100%;
   margin-bottom: 88px;
   align-items: center;
-  ju
 }
 
-.card-image img{
-
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin: 0 auto;
 }
+
+.card-modal {
+  background-color: #9490ff;
+  margin: 0 auto;
+}
+
+.card-modal-image {
+  width: 100%;
+} */
 
 /* MEDIA QUERIES */
 
@@ -442,7 +444,7 @@ button:hover {
   }
 
   .headline {
-    background-image: url("./images/two-circles.png");
+    background-image: url('./images/two-circles.png');
     background-repeat: no-repeat;
     background-size: contain;
     flex-direction: column;
@@ -519,7 +521,7 @@ button:hover {
   /* works section */
 
   .works-section {
-    background-image: url("./images/Group\ 65@2x.png");
+    background-image: url('./images/Group\ 65@2x.png');
     background-size: contain;
   }
 
@@ -650,7 +652,7 @@ button:hover {
     padding: 15px 0;
   }
 
-  .footer > .icons > ul {
+  .footer .icons ul {
     padding: 0;
   }
 
@@ -700,7 +702,7 @@ button:hover {
   /* works section */
 
   .works-section {
-    background-image: url("./images/Group\ 65@2x.png");
+    background-image: url('./images/Group\ 65@2x.png');
     background-size: contain;
   }
 
