@@ -30,25 +30,6 @@ a {
   animation-duration: 4s;
 }
 
-.main-conainer {
-  position: relative;
-}
-
-.menuconainer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background-color:#191765;
-  background-image: url('./images/mobile-menu.png');
-}
-
-.img-container img {
-  float: right;
-}
-
 @keyframes logo-movement {
   0% {
     transform: rotate(0deg);
@@ -69,13 +50,13 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 hr {
   border: 1px solid #696364;
   margin-top: 40px;
   margin-bottom: 40px;
-  /* max-width: 100%; */
 }
 
 h1 {
@@ -146,10 +127,6 @@ input {
   font-size: 42px;
 }
 
-.about ul {
-  padding: 0;
-}
-
 .contact-section p {
   font-size: 16px;
   line-height: 24px;
@@ -162,6 +139,51 @@ input {
 
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+/* mobile menu */
+.main-container {
+  position: relative;
+}
+
+.menu-container {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #191765;
+  background-image: url("./images/mobile-menu.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.close-menu {
+  cursor: pointer;
+}
+
+.img-container img {
+  float: right;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.menu-links {
+  font-weight: 500;
+  font-size: 24px;
+  padding: 0 40px;
+  margin: 0;
+}
+
+.menu-links ul li {
+  padding: 0 60px;
+}
+
+.menu-links p {
+  color: #9490ff;
 }
 
 /* headline */
@@ -366,6 +388,10 @@ button:hover {
 /* MEDIA QUERIES */
 
 @media (min-width: 980px) {
+  .menu-container {
+    display: none;
+  }
+
   .nav-bar {
     letter-spacing: 0.03em;
     margin-top: 20px;
@@ -618,6 +644,10 @@ button:hover {
 }
 
 @media (min-width: 850px) {
+  .menu-container {
+    display: none;
+  }
+
   .nav-bar {
     letter-spacing: 0.03em;
     margin-top: 20px;
@@ -688,6 +718,10 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+
   .nav-bar {
     letter-spacing: 0.03em;
     margin-top: 10px;
@@ -703,6 +737,10 @@ button:hover {
 }
 
 @media (min-width: 500px) {
+  .menu-container {
+    display: none;
+  }
+
   .padding-round {
     padding: 10px 12px 10px 12px;
   }

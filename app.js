@@ -1,6 +1,21 @@
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const menuContainer = document.querySelector(".menu-container");
+const menuClose = document.querySelector(".close-menu");
+const menuLinks = document.querySelector(".menu-links");
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-});
+hamburger.addEventListener("click", showMenu);
+menuClose.addEventListener("click", closeMenu);
+menuLinks.addEventListener("click", closeMenuList);
+
+function showMenu() {
+  menuContainer.style.display = "flex";
+  menuContainer.style.top = "0";
+}
+
+function closeMenu() {
+  menuContainer.style.top = "-100%";
+}
+
+function closeMenuList() {
+  menuContainer.style.top = "-100%";
+}

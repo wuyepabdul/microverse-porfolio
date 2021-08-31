@@ -23,10 +23,32 @@
   </head>
 
   <body>
-    <main class="main-conainer">
-      <div class="menuconainer">
-        <div class="img-container">
-          <img src="images/times-solid.svg" width="25" height="25" alt="" />
+    <main class="main-container">
+      <div class="menu-container d-flex" id="menu-container">
+        <div class="img-container padding">
+          <img
+            class="close-menu hide-menu"
+            src="images/times-solid.svg"
+            width="25"
+            height="25"
+            alt=""
+          />
+        </div>
+        <div>
+          <ul class="menu-links" id="menu-links">
+            <li class="hide-menu nav-link d-flex align-center space-between">
+              <a href="#portfolio-section">Portfolio</a>
+              <p>></p>
+            </li>
+            <li class="hide-menu nav-link d-flex align-center space-between">
+              <a href="#about-section">About</a>
+              <p>></p>
+            </li>
+            <li class="hide-menu nav-link d-flex align-center space-between">
+              <a href="#contact-section">Contact</a>
+              <p>></p>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -105,7 +127,7 @@
             </li>
             <li>
               <a href="#"
-                ><img src="./icons/linkeedIn.png" alt="linkedIn icon"
+                ><img src="./icons/linkedIn.png" alt="linkedIn icon"
               /></a>
             </li>
             <li>
@@ -253,7 +275,7 @@
                 <a href="#"><img src="./icons/github.png" alt="image" /></a>
               </li>
               <li>
-                <a href="#"><img src="./icons/linkeedIn.png" alt="image" /></a>
+                <a href="#"><img src="./icons/linkedIn.png" alt="image" /></a>
               </li>
               <li>
                 <a href="#"><img src="./icons/hi.png" alt="image" /></a>
@@ -332,7 +354,7 @@
             </li>
             <li>
               <a href="#"
-                ><img src="./icons/linkeedIn.png" alt="linkedIn icon"
+                ><img src="./icons/linkedIn.png" alt="linkedIn icon"
               /></a>
             </li>
             <li>
@@ -351,5 +373,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="./app.js"></script>
   </body>
 </html>
