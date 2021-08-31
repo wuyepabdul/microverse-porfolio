@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
@@ -28,6 +32,14 @@ a {
   position: relative;
   animation-name: logo-movement;
   animation-duration: 4s;
+}
+
+.modal-container {
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+
 }
 
 @keyframes logo-movement {
@@ -385,6 +397,22 @@ button:hover {
   padding: 0;
 }
 
+/* Modal */
+
+.card-modal {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 70%;
+  margin-bottom: 88px;
+  align-items: center;
+  ju
+}
+
+.card-image img{
+
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 980px) {
@@ -736,7 +764,7 @@ button:hover {
   }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .menu-container {
     display: none;
   }
