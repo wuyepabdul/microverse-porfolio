@@ -40,13 +40,12 @@ a {
   width: 33.33%;
 }
 
-.animate-movement {
+.animate-movement:hover {
   display: inline-block;
   width: 200px;
   position: relative;
   animation-name: logo-movement;
   animation-duration: 4s;
-  animation-iteration-count: 5;
 }
 
 @keyframes logo-movement {
@@ -366,6 +365,10 @@ button:hover {
   .nav-bar {
     letter-spacing: 0.03em;
     margin-top: 20px;
+  }
+
+  .newt {
+    color: black;
   }
 
   .hide {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wuyep Abdul</title>
+    <title>Wuyep Abdul's Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -27,14 +27,14 @@
       <a class="animate-movement padding-round">Wuyep Abdul</a>
       <nav class="bars">
         <ul class="d-flex align-center">
-          <li class="hide"><a href="#">Portfolio</a></li>
-          <li class="hide"><a href="#">About</a></li>
-          <li class="hide"><a href="#">Contact</a></li>
+          <li class="hide"><a href="#portfolio-section">Portfolio</a></li>
+          <li class="hide"><a href="#about-section">About</a></li>
+          <li class="hide"><a href="#contact-section">Contact</a></li>
           <li class="hide">
-            <a href="#"><img src="./images/envelope.png" alt="image" /></a>
+            <a href="#"><img src="./images/envelope.png" alt="" /></a>
           </li>
           <li class="hamburger">
-            <a href="#"><img src="./images/bars.png" alt="image" /></a>
+            <a href="#"><img src="./images/bars.png" alt="menu options" /></a>
           </li>
         </ul>
       </nav>
@@ -94,36 +94,38 @@
         </div>
         <ul class="d-flex align-center space-between">
           <li>
-            <a href="#"><img src="./icons/github.png" alt="image" /></a>
+            <a href="#"><img src="./icons/github.png" alt="github icon" /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/linkeedIn.png" alt="image" /></a>
+            <a href="#"
+              ><img src="./icons/linkeedIn.png" alt="linkedIn icon"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/hi.png" alt="image" /></a>
+            <a href="#"><img src="./icons/hi.png" alt="hello icon" /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/twitter.png" alt="image" /></a>
+            <a href="#"><img src="./icons/twitter.png" alt="twitter icon" /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/em.png" alt="image" /></a>
+            <a href="#"><img src="./icons/em.png" alt="em icon" /></a>
           </li>
         </ul>
         <div class="floated">
-          <img src="./icons/work.png" alt="image" />
+          <img src="./icons/work.png" alt="" />
         </div>
       </div>
     </section>
 
     <!-- My Recent work -->
-    <section class="works-section align-center padding">
+    <section id="portfolio-section" class="works-section align-center padding">
       <div>
         <h1 class="align-left justify-center">My Recent Work</h1>
         <hr />
       </div>
-      <div class="card">
+      <article class="card">
         <div class="card-image">
-          <img src="./images/works.png" alt="image" />
+          <img src="./images/works.png" alt="first project" />
         </div>
         <div class="card-body">
           <h3 class="card-title align-left">Multi-Post Stories</h3>
@@ -144,11 +146,11 @@
             <button class="align-left" type="submit">See Project</button>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="card row-reverse">
+      <article class="card row-reverse">
         <div class="card-image">
-          <img src="./images/works.png" alt="image" />
+          <img src="./images/works.png" alt="second project" />
         </div>
         <div class="card-body">
           <h3 class="card-title align-left">Multi-Post Stories</h3>
@@ -169,32 +171,12 @@
             <button class="align-left" type="submit">See Project</button>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-image"><img src="./images/works.png" alt="" /></div>
-        <div class="card-body">
-          <h3 class="card-title align-left">Multi-Post Stories</h3>
-          <p class="card-text align-left">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <div class="tags d-flex">
-            <ul class="d-flex">
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <div class="card-button align-left">
-            <button class="align-left" type="submit">See Project</button>
-          </div>
-        </div>
-      </div>
+      </article>
 
-      <div class="card row-reverse">
-        <div class="card-image"><img src="./images/works.png" alt="" /></div>
+      <article class="card">
+        <div class="card-image">
+          <img src="./images/works.png" alt="third project" />
+        </div>
         <div class="card-body">
           <h3 class="card-title align-left">Multi-Post Stories</h3>
           <p class="card-text align-left">
@@ -214,13 +196,38 @@
             <button class="align-left" type="submit">See Project</button>
           </div>
         </div>
-      </div>
+      </article>
+
+      <article class="card row-reverse">
+        <div class="card-image">
+          <img src="./images/works.png" alt="fourth project" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title align-left">Multi-Post Stories</h3>
+          <p class="card-text align-left">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <div class="tags d-flex">
+            <ul class="d-flex">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="card-button align-left">
+            <button class="align-left" type="submit">See Project</button>
+          </div>
+        </div>
+      </article>
 
       <hr />
     </section>
 
     <!-- About section -->
-    <section class="about d-grid padding align-center">
+    <section id="about-section" class="about d-grid padding align-center">
       <div class="align-center">
         <h1>About Myself</h1>
         <h4>LET'S CONNECT</h4>
@@ -255,7 +262,10 @@
     </section>
 
     <!-- contact section -->
-    <section class="contact-section d-grid align-center padding">
+    <section
+      id="contact-section"
+      class="contact-section d-grid align-center padding"
+    >
       <div>
         <h1 class="reference"></h1>
         <p>
@@ -271,7 +281,7 @@
           method="POST"
         >
           <input
-            class="full-width input-padding align-center"
+            class="full-width input-padding align-center newt"
             type="email"
             name="name"
             minlength="30"
@@ -279,14 +289,14 @@
             placeholder="Text Input"
           />
           <input
-            class="full-width input-padding align-center"
+            class="full-width input-padding align-center newt"
             type="email"
             name="email"
             required
             placeholder="jeremy@gmail.com "
           />
           <textarea
-            class="full-width input-padding align-center"
+            class="full-width input-padding align-center newt"
             name="message"
             minlength="500"
             required
@@ -302,19 +312,21 @@
       <div class="icons align-center">
         <ul class="d-flex align-center space-between">
           <li>
-            <a href="#"><img src="./icons/github.png" alt="image" /></a>
+            <a href="#"><img src="./icons/github.png" alt="github icon" /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/linkeedIn.png" alt="image" /></a>
+            <a href="#"
+              ><img src="./icons/linkeedIn.png" alt="linkedIn icon"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/hi.png" alt="image" /></a>
+            <a href="#"><img src="./icons/hi.png" alt="hello icon" /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/twitter.png" alt="image" /></a>
+            <a href="#"><img src="./icons/twitter.png" alt="twitter icon" /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/em.png" alt="image" /></a>
+            <a href="#"><img src="./icons/em.png" alt="em icon" /></a>
           </li>
         </ul>
         <span class="email">wuyepabdul@gmail.com</span>
