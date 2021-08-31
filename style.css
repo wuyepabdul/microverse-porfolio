@@ -133,6 +133,10 @@ input {
   color: #f5f5ff;
 }
 
+.menu-links p {
+  color: #9490ff;
+}
+
 .about .intro > p {
   margin: 0;
 }
@@ -180,10 +184,6 @@ input {
 
 .menu-links ul li {
   padding: 0 60px;
-}
-
-.menu-links p {
-  color: #9490ff;
 }
 
 /* headline */
