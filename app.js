@@ -72,12 +72,10 @@ function createMarkup(projects) {
   </div>  
   `;
   projects.forEach(
-    (project) =>
-      (html += `<article class="card">
+    (project) => (html ==html + `<article class="card">
   <div class="card-image">
     <img src=${project.image} alt="first project" />
   </div>
-
   <div class="card-body">
     <h3 class="card-title align-left">${project.name}</h3>
     <p class="card-text align-left">
@@ -86,7 +84,6 @@ function createMarkup(projects) {
     <div class="tags d-flex">
       <ul class="d-flex">
       ${project.technologies.map((list) => `<li>${list} </li>`).join('')}  
-        
       </ul>
     </div>
     <div class="card-button align-left">
@@ -99,33 +96,7 @@ function createMarkup(projects) {
   return html;
 }
 
-/* projects.forEach(
-  (project) => (html += 
-      `<article class="card">
-    <div class="card-image">
-      <img src=${project.image} alt="first project" />
-    </div>
-
-    <div class="card-body">
-      <h3 class="card-title align-left">${project.name}</h3>
-      <p class="card-text align-left">
-      ${project.description}
-      </p>
-      <div class="tags d-flex">
-        <ul class="d-flex">
-        ${project.technologies.map((list) => `<li>${list} </li>`).join('')}  
-          
-        </ul>
-      </div>
-      <div class="card-button align-left">
-        <button class="open-modal align-left" type="submit">See Project</button>
-      </div>
-    </div>
-  </article>`)
-); */
-
-document.getElementById('portfolio-section').innerHTML =
-  createMarkup(projectsList);
+document.getElementById('portfolio-section').innerHTML = createMarkup(projectsList);
 
 /* modal */
 const modalBtn = document.querySelectorAll('.open-modal');
