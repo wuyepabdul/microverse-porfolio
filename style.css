@@ -94,6 +94,7 @@ button:hover {
   background: #7d73fc;
   padding: 12px 24px;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  cursor: pointer;
 }
 
 h2 {
