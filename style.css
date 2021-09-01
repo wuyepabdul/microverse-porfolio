@@ -813,7 +813,7 @@ button:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .menu-container {
     display: none;
   }
@@ -824,5 +824,11 @@ button:hover {
 
   .padding {
     padding: 0 40px;
+  }
+}
+
+@media (min-width: 100px) {
+  .menu-container {
+    display: none;
   }
 }

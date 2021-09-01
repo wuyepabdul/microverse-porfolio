@@ -20,8 +20,6 @@ hamburger.addEventListener('click', showMenu);
 menuClose.addEventListener('click', closeMenu);
 menuLinks.addEventListener('click', closeMenuList);
 
-let technologies = ['html', 'Ruby on Rails', 'css', 'Github'];
-
 /* project cards */
 let projects = [
   {
@@ -86,7 +84,7 @@ for (const project of projects) {
       </p>
       <div class="tags d-flex">
         <ul class="d-flex">
-        ${technologies.map((list) => `<li>${list} </li>`)}  
+        ${project.technologies.map((list) => `<li>${list} </li>`)}  
           
         </ul>
       </div>
@@ -100,13 +98,12 @@ for (const project of projects) {
 document.getElementById('portfolio-section').innerHTML = html;
 
 /* modal */
-const openModal = document.querySelector('.open-modal');
+const modalBtn = document.querySelectorAll('.open-modal');
 const modalContainer = document.querySelector('.modal-container');
 const modalClose = document.querySelector('.close-modal');
 const mainContainer = document.querySelector('.main-container');
 
 function showModal() {
-  console.log('open');
   modalContainer.style.display = 'flex';
   mainContainer.style.display = 'none';
 }
@@ -116,5 +113,8 @@ function closeModal() {
   mainContainer.style.display = 'block';
 }
 
-openModal.addEventListener('click', showModal);
+for (let i = 0; i < modalBtn.length; i++) {
+  modalBtn[i].addEventListener('click', showModal);
+}
+
 modalClose.addEventListener('click', closeModal);
