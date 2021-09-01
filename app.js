@@ -71,7 +71,6 @@ function createMarkup(projects) {
     <hr />
   </div>  
   `;
-
   projects.forEach(
     (project) =>
       (html += `<article class="card">
