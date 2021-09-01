@@ -715,13 +715,6 @@ button:hover {
     border-top: 1px solid #3a3837;
   }
 
-  .footer .icons {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-  }
-
   .footer .icons ul {
     padding: 0;
   }
