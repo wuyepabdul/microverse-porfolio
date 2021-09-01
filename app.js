@@ -73,7 +73,9 @@ let html = `
 
 projects.forEach(
   (project) =>
-    (html += `<article class="card"  >
+    (html =
+      html +
+      `<article class="card">
     <div class="card-image">
       <img src=${project.image} alt="first project" />
     </div>
@@ -93,7 +95,7 @@ projects.forEach(
         <button class="open-modal align-left" type="submit">See Project</button>
       </div>
     </div>
-  </article>,`)
+  </article>`)
 );
 
 document.getElementById('portfolio-section').innerHTML = html;
