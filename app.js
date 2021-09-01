@@ -84,7 +84,7 @@ for (const project of projects) {
       </p>
       <div class="tags d-flex">
         <ul class="d-flex">
-        ${project.technologies.map((list) => `<li>${list} </li>`)}  
+        ${project.technologies.map((list) => `<li>${list} </li>`).join('')}  
           
         </ul>
       </div>
