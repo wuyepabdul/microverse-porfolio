@@ -99,17 +99,17 @@ document.getElementById('portfolio-section').innerHTML = html;
 
 /* modal */
 const modalBtn = document.querySelectorAll('.open-modal');
-const modalContainer = document.querySelector('.modal-container');
+const modalSection = document.querySelector('.modal-section');
 const modalClose = document.querySelector('.close-modal');
 const mainContainer = document.querySelector('.main-container');
 
 function showModal() {
-  modalContainer.style.display = 'flex';
+  modalSection.style.display = 'flex';
   mainContainer.style.display = 'none';
 }
 
 function closeModal() {
-  modalContainer.style.display = 'none';
+  modalSection.style.display = 'none';
   mainContainer.style.display = 'block';
 }
 
