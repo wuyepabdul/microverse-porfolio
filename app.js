@@ -20,8 +20,12 @@ hamburger.addEventListener('click', showMenu);
 menuClose.addEventListener('click', closeMenu);
 menuLinks.addEventListener('click', closeMenuList);
 
+let technologies = ['html', 'Ruby on Rails', 'css', 'Github'];
+
+/* project cards */
 let projects = [
   {
+    id: '1',
     name: 'Multi-Post Stories',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
@@ -31,6 +35,7 @@ let projects = [
     viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
   },
   {
+    id: '2',
     name: 'Multi-Post Stories',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
@@ -40,6 +45,7 @@ let projects = [
     viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
   },
   {
+    id: '3',
     name: 'Multi-Post Stories',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
@@ -49,6 +55,7 @@ let projects = [
     viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
   },
   {
+    id: '4',
     name: 'Multi-Post Stories',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
@@ -59,15 +66,15 @@ let projects = [
   },
 ];
 
-let projectCard = ` 
+let html = ` 
   <div>
     <h1 class="align-left justify-center">My Recent Work</h1>
     <hr />
   </div>  
-  ${projects.map(
-    (project) => `
- 
-  <article class="card ">
+  `;
+
+for (const project of projects) {
+  html += `<article class="card"  >
     <div class="card-image">
       <img src=${project.image} alt="first project" />
     </div>
@@ -79,15 +86,35 @@ let projectCard = `
       </p>
       <div class="tags d-flex">
         <ul class="d-flex">
-        ${project.technologies.map((list) => `<li>${list} </li>`)}  
+        ${technologies.map((list) => `<li>${list} </li>`)}  
           
         </ul>
       </div>
       <div class="card-button align-left">
-        <button class="align-left" type="submit">See Project</button>
+        <button class="open-modal align-left" type="submit">See Project</button>
       </div>
     </div>
-  </article>`
-  )}`;
+  </article>`;
+}
 
-document.getElementById('portfolio-section').innerHTML = projectCard;
+document.getElementById('portfolio-section').innerHTML = html;
+
+/* modal */
+const openModal = document.querySelector('.open-modal');
+const modalContainer = document.querySelector('.modal-container');
+const modalClose = document.querySelector('.close-modal');
+const mainContainer = document.querySelector('.main-container');
+
+function showModal() {
+  console.log('open');
+  modalContainer.style.display = 'flex';
+  mainContainer.style.display = 'none';
+}
+
+function closeModal() {
+  modalContainer.style.display = 'none';
+  mainContainer.style.display = 'block';
+}
+
+openModal.addEventListener('click', showModal);
+modalClose.addEventListener('click', closeModal);

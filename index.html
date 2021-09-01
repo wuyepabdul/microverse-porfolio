@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wuyep Abdul's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -23,35 +27,45 @@
   </head>
 
   <body>
+    <div class="modal-container">
+      <article class="card-modal">
+        <div class="card-modal-title d-flex space-between align-center">
+          <h3>Multi-Post Stories</h3>
+          <p class="close-modal">x</p>
+        </div>
+        <div class="card-modal-image">
+          <img src="./images/Snapshoot Portfolio.png" alt="third project" />
+        </div>
+        <div class="card-modal-body">
+          <p class="card-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it 1960s with the releaLorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since the 1500s, when an
+            unknown Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scramble.
+          </p>
+          <div class="tags d-flex">
+            <ul class="d-flex">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="card-button d-flex align-center">
+            <button class="btn"><i class="fa fa-folder"></i> Folder</button>
+            <button class="btn"><i class="fa fa-folder"></i> Folder</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
     <main class="main-container">
-      <!--  <div class="modal-container">
-        <article class="card-modal">
-          <div class="card-modal-image">
-            <img src="./images/Snapshoot Portfolio.png" alt="third project" />
-          </div>
-          <div class="card-modal-body">
-            <h3 class="card-title align-left">Multi-Post Stories</h3>
-            <p class="card-text align-left">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="tags d-flex">
-              <ul class="d-flex">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <div class="card-button align-left">
-              <button class="align-left" type="submit">See Project</button>
-            </div>
-          </div>
-        </article>
-      </div>
- -->
       <div class="menu-container d-flex" id="menu-container">
         <div class="img-container padding">
           <img
@@ -267,7 +281,7 @@
 
       <!-- footer -->
       <footer class="footer">
-        <div class="icons align-center">
+        <div class="icons d-flex align-center">
           <ul class="d-flex align-center space-between">
             <li>
               <a href="#"><img src="./icons/github.png" alt="github icon" /></a>
