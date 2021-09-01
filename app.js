@@ -21,7 +21,7 @@ menuClose.addEventListener('click', closeMenu);
 menuLinks.addEventListener('click', closeMenuList);
 
 /* project cards */
-let projects = [
+const projects = [
   {
     id: '1',
     name: 'Multi-Post Stories',
@@ -71,29 +71,30 @@ let html = `
   </div>  
   `;
 
-for (const project of projects) {
-  html += `<article class="card"  >
-    <div class="card-image">
-      <img src=${project.image} alt="first project" />
-    </div>
+projects.map(
+  (project) =>
+    (html += `<article class="card"  >
+<div class="card-image">
+  <img src=${project.image} alt="first project" />
+</div>
 
-    <div class="card-body">
-      <h3 class="card-title align-left">${project.name}</h3>
-      <p class="card-text align-left">
-      ${project.description}
-      </p>
-      <div class="tags d-flex">
-        <ul class="d-flex">
-        ${project.technologies.map((list) => `<li>${list} </li>`).join('')}  
-          
-        </ul>
-      </div>
-      <div class="card-button align-left">
-        <button class="open-modal align-left" type="submit">See Project</button>
-      </div>
-    </div>
-  </article>`;
-}
+<div class="card-body">
+  <h3 class="card-title align-left">${project.name}</h3>
+  <p class="card-text align-left">
+  ${project.description}
+  </p>
+  <div class="tags d-flex">
+    <ul class="d-flex">
+    ${project.technologies.map((list) => `<li>${list} </li>`).join('')}  
+      
+    </ul>
+  </div>
+  <div class="card-button align-left">
+    <button class="open-modal align-left" type="submit">See Project</button>
+  </div>
+</div>
+</article>`)
+);
 
 document.getElementById('portfolio-section').innerHTML = html;
 

@@ -69,6 +69,33 @@ h1 {
   line-height: 72px;
 }
 
+button {
+  padding: 12px;
+  font-weight: 500;
+  background-color: #7d73fc;
+  margin-top: 12px;
+  color: #fff;
+  border: none;
+}
+
+button:enabled {
+  background: #7d73fc;
+}
+
+button:focus {
+  background: #5e42d7;
+}
+
+button:disabled {
+  background: #2a2b33;
+}
+
+button:hover {
+  background: #7d73fc;
+  padding: 12px 24px;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
 h2 {
   color: #9490ff;
   font-size: 40px;
@@ -108,6 +135,13 @@ input {
   padding: 0 10px;
 }
 
+.tags > li {
+  border-right: 1px solid #696364;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+}
+
 .bars > ul > li {
   padding: 0 15px;
 }
@@ -139,6 +173,12 @@ input {
 
 .menu-links p {
   color: #9490ff;
+}
+
+.modal-header p {
+  padding-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .about .intro > p {
@@ -189,19 +229,12 @@ input {
   margin: 0;
 }
 
-.modal-header p {
-  padding-right: 20px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
 .modal-bg-color {
   background: rgba(255, 255, 255, 0.16);
 }
 
 .modal-body {
   position: absolute;
-  /* padding: 12px; */
   top: 0;
   width: 95%;
   height: 50%;
@@ -333,13 +366,6 @@ input {
   padding-left: 0;
 }
 
-.tags > li {
-  border-right: 1px solid #696364;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px;
-}
-
 .lists > div > ul {
   flex-wrap: wrap;
   font-size: 15px;
@@ -392,33 +418,6 @@ input {
 
 .card-image img:hover {
   padding: 7px;
-}
-
-button {
-  padding: 12px;
-  font-weight: 500;
-  background-color: #7d73fc;
-  margin-top: 12px;
-  color: #fff;
-  border: none;
-}
-
-button:enabled {
-  background: #7d73fc;
-}
-
-button:focus {
-  background: #5e42d7;
-}
-
-button:disabled {
-  background: #2a2b33;
-}
-
-button:hover {
-  background: #7d73fc;
-  padding: 12px 24px;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .align-left {
