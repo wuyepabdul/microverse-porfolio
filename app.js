@@ -61,21 +61,20 @@ const projectsList = [
     technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
     viewLive: 'link',
     viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
-  },
+  }
 ];
 
-
-
-  function createMarkup(projects){
-    let html = ` 
+function createMarkup(projects) {
+  let html = ` 
   <div>
     <h1 class="align-left justify-center">My Recent Work</h1>
     <hr />
   </div>  
   `;
 
-    projects.forEach((project)=>html += 
-    `<article class="card">
+  projects.forEach(
+    (project) =>
+      (html += `<article class="card">
   <div class="card-image">
     <img src=${project.image} alt="first project" />
   </div>
@@ -96,9 +95,10 @@ const projectsList = [
     </div>
   </div>
 </article>`)
+  );
 
-return html
-  }
+  return html;
+}
 
 /* projects.forEach(
   (project) => (html += 
@@ -125,7 +125,8 @@ return html
   </article>`)
 ); */
 
-document.getElementById('portfolio-section').innerHTML = createMarkup(projectsList);
+document.getElementById('portfolio-section').innerHTML =
+  createMarkup(projectsList);
 
 /* modal */
 const modalBtn = document.querySelectorAll('.open-modal');
