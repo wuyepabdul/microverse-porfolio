@@ -69,6 +69,12 @@ h1 {
   line-height: 72px;
 }
 
+.btn-modal{
+  padding: 12px 20px;
+  background-color: #7d73fc;
+  margin: 30px 20px;
+}
+
 button {
   padding: 12px;
   font-weight: 500;
