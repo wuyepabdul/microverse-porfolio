@@ -79,6 +79,11 @@ input {
   margin-bottom: 24px;
 }
 
+.icons {
+  width: 200px;
+  align-items: center;
+}
+
 .padding {
   padding: 5px 24px;
 }
@@ -120,6 +125,8 @@ input {
   display: inline-block;
 }
 
+
+
 .works-section h1 {
   max-width: 220px;
   padding: 0 24px;
@@ -127,7 +134,7 @@ input {
   font-size: 42px;
 }
 
-.contact-section p {
+.contact-section .p-text {
   font-size: 16px;
   line-height: 24px;
   color: #f5f5ff;
@@ -145,7 +152,8 @@ input {
   flex-direction: row-reverse;
 }
 
-/* mobile menu */
+
+
 .main-container {
   position: relative;
 }
@@ -373,6 +381,12 @@ button:hover {
   height: 148px;
 }
 
+.p-error  {
+  color: red;
+  margin-left: 20px;
+  align-items: center;
+}
+
 .form-footer button {
   width: 65px;
 }
@@ -384,6 +398,8 @@ button:hover {
 .footer > .icons > ul {
   padding: 0;
 }
+
+
 
 /* MEDIA QUERIES */
 
@@ -550,10 +566,7 @@ button:hover {
     font-size: 20px;
   }
 
-  .icons {
-    width: 200px;
-    align-items: center;
-  }
+
 
   .icons img {
     font-size: 30px;
@@ -571,7 +584,7 @@ button:hover {
     grid-template-columns: auto;
   }
 
-  .contact-section p {
+  .contact-section .p-text {
     font-size: 20px;
     line-height: 24px;
     color: #f5f5ff;
@@ -580,7 +593,9 @@ button:hover {
     justify-content: center;
   }
 
-  .contact-section form {
+
+
+  .contact-section .p-textorm {
     flex-direction: column;
     margin-top: 88px;
   }
@@ -599,11 +614,11 @@ button:hover {
     padding: 15px 16px;
   }
 
-  .contact-section textarea {
+  .contact-section .p-textextarea {
     height: 148px;
   }
 
-  .contact-section button {
+  .contact-section .p-textutton {
     margin-top: 101px;
     margin-bottom: 118px;
     width: 160px;
