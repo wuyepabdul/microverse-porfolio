@@ -317,10 +317,11 @@
             class="d-flex align-center"
             action="https://formspree.io/f/xoqypwwp"
             method="POST"
+            id="contactme"
           >
             <input
               class="full-width input-padding align-center newt"
-              type="email"
+              type="text"
               name="name"
               minlength="30"
               required
@@ -330,17 +331,21 @@
               class="full-width input-padding align-center newt"
               type="email"
               name="email"
+              id="email"
               required
               placeholder="jeremy@gmail.com "
             />
             <textarea
               class="full-width input-padding align-center newt"
               name="message"
-              minlength="500"
+              maxlength="500"
               required
               placeholder="Enter text here"
             ></textarea>
-            <button type="submit">Send</button>
+            <div class="form-footer">
+              <button type="submit">Send</button>
+              <p id="p-error"></p>
+            </div>
           </form>
         </div>
       </section>
@@ -375,5 +380,6 @@
     </main>
 
     <script src="./app.js"></script>
+    <script src="formvalidation.js"></script>
   </body>
 </html>
