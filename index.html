@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wuyep Abdul's Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -16,13 +21,56 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-K4M988VH5G");
+      gtag('config', 'G-K4M988VH5G');
     </script>
   </head>
 
   <body>
+    <section class="modal-section">
+      <div class="bg-image"></div>
+      <div class="modal-container modal-bg-color">
+        <div class="modal-body">
+          <div class="modal-header d-flex align-center space-between">
+            <h1>Multi-Post Stories</h1>
+            <p class="close-modal">X</p>
+          </div>
+          <div class="modal-image">
+            <img src="./images/projectImage.png" alt="" />
+          </div>
+          <p class="modal-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it 1960s with the releaLorem Ipsum is simply dummy
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scramble.
+          </p>
+          <ul class="tags d-flex modal-inner-width">
+            <li>css</li>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+
+          <div class="modal-button">
+            <a
+              class="btn-modal"
+              href="https://wuyepabdul.github.io/microverse-porfolio/"
+              ><i class="fa fa-"></i> See Live</a
+            >
+            <a
+              class="btn-modal"
+              href="https://github.com/wuyepabdul/microverse-porfolio"
+            >
+              <i class="fab fa-github"></i> See Source
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <main class="main-container">
       <div class="menu-container d-flex" id="menu-container">
         <div class="img-container padding">
@@ -153,114 +201,6 @@
         id="portfolio-section"
         class="works-section align-center padding"
       >
-        <div>
-          <h1 class="align-left justify-center">My Recent Work</h1>
-          <hr />
-        </div>
-        <article class="card">
-          <div class="card-image">
-            <img src="./images/works.png" alt="first project" />
-          </div>
-          <div class="card-body">
-            <h3 class="card-title align-left">Multi-Post Stories</h3>
-            <p class="card-text align-left">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="tags d-flex">
-              <ul class="d-flex">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <div class="card-button align-left">
-              <button class="align-left" type="submit">See Project</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="card row-reverse">
-          <div class="card-image">
-            <img src="./images/works.png" alt="second project" />
-          </div>
-          <div class="card-body">
-            <h3 class="card-title align-left">Multi-Post Stories</h3>
-            <p class="card-text align-left">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="tags d-flex">
-              <ul class="d-flex">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <div class="card-button align-left">
-              <button class="align-left" type="submit">See Project</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image">
-            <img src="./images/works.png" alt="third project" />
-          </div>
-          <div class="card-body">
-            <h3 class="card-title align-left">Multi-Post Stories</h3>
-            <p class="card-text align-left">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="tags d-flex">
-              <ul class="d-flex">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <div class="card-button align-left">
-              <button class="align-left" type="submit">See Project</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="card row-reverse">
-          <div class="card-image">
-            <img src="./images/works.png" alt="fourth project" />
-          </div>
-          <div class="card-body">
-            <h3 class="card-title align-left">Multi-Post Stories</h3>
-            <p class="card-text align-left">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="tags d-flex">
-              <ul class="d-flex">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <div class="card-button align-left">
-              <button class="align-left" type="submit">See Project</button>
-            </div>
-          </div>
-        </article>
-
         <hr />
       </section>
 
@@ -350,30 +290,29 @@
         <div class="icons align-center">
           <ul class="d-flex align-center space-between">
             <li>
-              <a href="#"><img src="./icons/github.png" alt="github icon" /></a>
+              <a href="#"><img src="./icons/github.png" alt="image" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./icons/linkedIn.png" alt="linkedIn icon"
-              /></a>
+              <a href="#"><img src="./icons/linkedIn.png" alt="image" /></a>
             </li>
             <li>
-              <a href="#"><img src="./icons/hi.png" alt="hello icon" /></a>
+              <a href="#"><img src="./icons/hi.png" alt="image" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./icons/twitter.png" alt="twitter icon"
-              /></a>
+              <a href="#"><img src="./icons/twitter.png" alt="image" /></a>
             </li>
             <li>
-              <a href="#"><img src="./icons/em.png" alt="em icon" /></a>
+              <a href="#"><img src="./icons/em.png" alt="image" /></a>
             </li>
           </ul>
-          <span class="email">wuyepabdul@gmail.com</span>
+          <p>wuyepabdul@gmail.com</p>
         </div>
       </footer>
     </main>
 
     <script src="./app.js"></script>
+    <script>
+      projects;
+    </script>
   </body>
 </html>
