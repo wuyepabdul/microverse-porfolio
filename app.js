@@ -21,6 +21,7 @@ menuClose.addEventListener('click', closeMenu);
 menuLinks.addEventListener('click', closeMenuList);
 
 /* project cards */
+// eslint-disable-next-line no-unused-vars
 const projectsList = [
   {
     id: '1',
@@ -71,12 +72,9 @@ let html = `
 </div>  
 `;
 
-projectsList.forEach(
-  (project) =>
-    (html += `<article class="card">
-<div class="card-image">
-  <img src=${project.image} alt="first project" />
-</div>
+projectsList.forEach((project) => {
+  html += `<article class="card"><div class="card-image">
+  <img src=${project.image} alt="first project" /></div>
 <div class="card-body">
   <h3 class="card-title align-left">${project.name}</h3>
   <p class="card-text align-left">
@@ -91,8 +89,8 @@ projectsList.forEach(
     <button class="open-modal align-left" type="submit">See Project</button>
   </div>
 </div>
-</article>,`)
-);
+</article>,`;
+});
 
 document.getElementById('portfolio-section').innerHTML = html;
 
