@@ -64,43 +64,37 @@ const projectsList = [
   },
 ];
 
-function createMarkup(projects) {
-  let html = `
-  <div>
-    <h1 class="align-left justify-center">My Recent Work</h1>
-    <hr />
-  </div>  
-  `;
-  projects.forEach(
-    (project) =>
-      html ==
-      html +
-        `<article class="card">
-  <div class="card-image">
-    <img src=${project.image} alt="first project" />
-  </div>
-  <div class="card-body">
-    <h3 class="card-title align-left">${project.name}</h3>
-    <p class="card-text align-left">
-    ${project.description}
-    </p>
-    <div class="tags d-flex">
-      <ul class="d-flex">
-      ${project.technologies.map((list) => `<li>${list} </li>`).join('')}  
-      </ul>
-    </div>
-    <div class="card-button align-left">
-      <button class="open-modal align-left" type="submit">See Project</button>
-    </div>
-  </div>
-</article>,`
-  );
+let html = `
+<div>
+  <h1 class="align-left justify-center">My Recent Work</h1>
+  <hr />
+</div>  
+`;
 
-  return html;
-}
+projectsList.forEach(
+  (project) =>
+    (html += `<article class="card">
+<div class="card-image">
+  <img src=${project.image} alt="first project" />
+</div>
+<div class="card-body">
+  <h3 class="card-title align-left">${project.name}</h3>
+  <p class="card-text align-left">
+  ${project.description}
+  </p>
+  <div class="tags d-flex">
+    <ul class="d-flex">
+    ${project.technologies.map((list) => `<li>${list} </li>`).join('')}  
+    </ul>
+  </div>
+  <div class="card-button align-left">
+    <button class="open-modal align-left" type="submit">See Project</button>
+  </div>
+</div>
+</article>,`)
+);
 
-document.getElementById('portfolio-section').innerHTML =
-  createMarkup(projectsList);
+document.getElementById('portfolio-section').innerHTML = html;
 
 /* modal */
 const modalBtn = document.querySelectorAll('.open-modal');
