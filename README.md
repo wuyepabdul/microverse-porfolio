@@ -28,7 +28,6 @@ A Porfolio to help showcase my skills and achievments to employers
 ## Demo
 
 https://wuyepabdul.github.io/microverse-porfolio/
-
 ## Getting Started
 
 Clone the project
