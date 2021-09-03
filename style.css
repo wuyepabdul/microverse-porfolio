@@ -83,6 +83,7 @@ input {
   padding: 5px 24px;
 }
 
+
 .icons {
   max-width: 200px;
   align-items: center;
@@ -106,19 +107,13 @@ input {
   padding: 0 5px;
 }
 
-.icons {
-  max-width: 200px;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .footer .icons {
-  max-width:200px;
+  max-width: 200px;
   display: flex;
   align-items: center;
-  justify-content: space-center;
+  justify-content: center;
   padding: 15px 0;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .footer > .icons > ul {
