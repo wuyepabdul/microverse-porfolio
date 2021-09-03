@@ -80,8 +80,26 @@ input {
 }
 
 .icons {
-  width: 200px;
+  max-width: 200px;
   align-items: center;
+  margin: 0 auto;
+}
+
+.footer .icons {
+  max-width:200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-center;
+  padding: 15px 0;
+  margin:0 auto;
+}
+
+.footer > .icons > ul {
+  padding: 0;
+}
+
+.footer .icons li {
+  padding: 0 5px;
 }
 
 .padding {
@@ -133,6 +151,12 @@ input {
   color: #9490ff;
   font-size: 42px;
 }
+
+
+.contact-text-wraper{
+  margin-bottom: 30px;
+}
+
 
 .contact-section .p-text {
   font-size: 16px;
@@ -266,6 +290,11 @@ input {
   margin-bottom: 5px;
 }
 
+.newt {
+  color: black;
+}
+
+
 .d-flex {
   display: flex;
   flex-wrap: wrap;
@@ -346,10 +375,7 @@ button:hover {
   margin: 0;
 }
 
-.icons {
-  max-width: 200px;
-  margin: 0 auto;
-}
+
 
 .intro > div > ul {
   padding-left: 0;
@@ -413,9 +439,6 @@ button:hover {
     margin-top: 20px;
   }
 
-  .newt {
-    color: black;
-  }
 
   .hide {
     display: inline-block;
@@ -631,10 +654,11 @@ button:hover {
   }
 
   .footer .icons {
-    width: 400px;
+    max-width:400px;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
+    margin:0 auto;
   }
 
   .footer > .icons > ul {
@@ -729,6 +753,22 @@ button:hover {
   /* about */
   .about {
     grid-template-columns: auto auto;
+  }
+
+  .footer .icons {
+    max-width:400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin:0 auto;
+  }
+
+  .footer > .icons > ul {
+    padding: 0;
+  }
+
+  .footer .icons li {
+    padding: 0 5px;
   }
 }
 
