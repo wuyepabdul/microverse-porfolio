@@ -95,8 +95,34 @@ input {
   padding: 0 10px;
 }
 
+button {
+  padding: 12px;
+  font-weight: 500;
+  background-color: #7d73fc;
+  margin-top: 12px;
+  color: #fff;
+  border: none;
+  transition: padding 1s;
+}
 
-  
+button:enabled {
+  background: #7d73fc;
+}
+
+button:focus {
+  background: #5e42d7;
+}
+
+button:disabled {
+  background: #2a2b33;
+}
+
+button:hover {
+  background: #7d73fc;
+  padding: 12px 24px;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
 /* Modal */
 
 .modal-section {
@@ -413,7 +439,7 @@ input {
   background-size: cover;
 }
 
-.works-section article:nth-child(even){
+.works-section article:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -431,33 +457,6 @@ input {
   padding: 7px;
 }
 
-button {
-  padding: 12px;
-  font-weight: 500;
-  background-color: #7d73fc;
-  margin-top: 12px;
-  color: #fff;
-  border: none;
-  transition: padding 1s;
-}
-
-button:enabled {
-  background: #7d73fc;
-}
-
-button:focus {
-  background: #5e42d7;
-}
-
-button:disabled {
-  background: #2a2b33;
-}
-
-button:hover {
-  background: #7d73fc;
-  padding: 12px 24px;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-}
 
 .align-left {
   text-align: left;
