@@ -413,6 +413,10 @@ input {
   background-size: cover;
 }
 
+.works-section article:nth-child(even){
+  flex-direction: row-reverse;
+}
+
 .card {
   margin-bottom: 50px;
   transition: padding 2s;

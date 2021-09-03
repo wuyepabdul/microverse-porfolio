@@ -21,7 +21,6 @@ menuClose.addEventListener('click', closeMenu);
 menuLinks.addEventListener('click', closeMenuList);
 
 /* project cards */
-// eslint-disable-next-line no-unused-vars
 const projectsList = [
   {
     id: '1',
