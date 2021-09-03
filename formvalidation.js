@@ -10,5 +10,7 @@ contactMeForm.addEventListener('submit', (event) => {
   const email = document.getElementById('email').value;
   if (lowerCaseValidate(email)) {
     document.getElementById('p-error').innerHTML = ERROR_MESSAGE;
+  } else {
+    contactMeForm.submit();
   }
 });
