@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-html {
-  scroll-behavior: smooth;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   background: #191765;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -69,40 +65,6 @@ h1 {
   line-height: 72px;
 }
 
-.btn-modal {
-  padding: 12px 20px;
-  background-color: #7d73fc;
-  margin: 30px 20px;
-}
-
-button {
-  padding: 12px;
-  font-weight: 500;
-  background-color: #7d73fc;
-  margin-top: 12px;
-  color: #fff;
-  border: none;
-}
-
-button:enabled {
-  background: #7d73fc;
-}
-
-button:focus {
-  background: #5e42d7;
-}
-
-button:disabled {
-  background: #2a2b33;
-}
-
-button:hover {
-  background: #7d73fc;
-  padding: 12px 24px;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  cursor: pointer;
-}
-
 h2 {
   color: #9490ff;
   font-size: 40px;
@@ -115,6 +77,29 @@ h3 {
 
 input {
   margin-bottom: 24px;
+}
+
+.icons {
+  max-width: 200px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer .icons {
+  max-width:200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-center;
+  padding: 15px 0;
+  margin:0 auto;
+}
+
+.footer > .icons > ul {
+  padding: 0;
+}
+
+.footer .icons li {
+  padding: 0 5px;
 }
 
 .icons {
@@ -165,13 +150,6 @@ input {
   padding: 0 10px;
 }
 
-.tags > li {
-  border-right: 1px solid #696364;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px;
-}
-
 .bars > ul > li {
   padding: 0 15px;
 }
@@ -188,8 +166,6 @@ input {
   display: inline-block;
 }
 
-
-
 .works-section h1 {
   max-width: 220px;
   padding: 0 24px;
@@ -197,11 +173,9 @@ input {
   font-size: 42px;
 }
 
-
 .contact-text-wraper{
   margin-bottom: 30px;
 }
-
 
 .contact-section .p-text {
   font-size: 16px;
@@ -213,107 +187,13 @@ input {
   color: #9490ff;
 }
 
-.modal-header p {
-  padding-right: 20px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
 .about .intro > p {
   margin: 0;
 }
 
-/* Modal */
-
-.modal-section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: none;
+.row-reverse {
+  flex-direction: row-reverse;
 }
-
-.modal-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.bg-image {
-  background-image: url('./images/two-circles.png');
-  height: 100vh;
-  width: 100%;
-  filter: blur(20px);
-  -webkit-filter: blur(20px);
-}
-
-.modal-header {
-  width: 100%;
-  height: 20%;
-  margin-right: 10px;
-}
-
-.modal-header h1 {
-  color: #fff;
-  font-size: 40px;
-  margin: 0;
-}
-
-.modal-bg-color {
-  background: rgba(255, 255, 255, 0.16);
-}
-
-.modal-body {
-  position: absolute;
-  top: 0;
-  width: 95%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-image {
-  width: 100%;
-  height: 300px;
-}
-
-.modal-image img {
-  width: 100%;
-  height: 100%;
-}
-
-.modal-text {
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-.modal-body ul {
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.modal-button {
-  height: 100%;
-  max-width: 300px;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.modal-button button {
-  margin: 20px 20px;
-}
-
-
 
 .main-container {
   position: relative;
@@ -329,7 +209,7 @@ input {
   left: 0;
   z-index: 10;
   background-color: #191765;
-  background-image: url('./images/mobile-menu.png');
+  background-image: url("./images/mobile-menu.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -358,7 +238,7 @@ input {
 /* headline */
 
 .headline {
-  background-image: url('./images/headline-mobile.svg');
+  background-image: url("./images/headline-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   flex-direction: column;
@@ -400,9 +280,16 @@ input {
   letter-spacing: 0.37px;
 }
 
-.tags {
+.tags > ul {
   color: #fff;
   padding-left: 0;
+}
+
+.tags > ul > li {
+  border-right: 1px solid #696364;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
 }
 
 .lists > div > ul {
@@ -442,12 +329,8 @@ input {
 /* works section */
 
 .works-section {
-  background-image: url('./images/works-section-mobile.png');
+  background-image: url("./images/works-section-mobile.png");
   background-size: cover;
-}
-
-.works-section > article:nth-child(even) {
-  flex-direction: row-reverse;
 }
 
 .card {
@@ -462,6 +345,34 @@ input {
 
 .card-image img:hover {
   padding: 7px;
+}
+
+button {
+  padding: 12px;
+  font-weight: 500;
+  background-color: #7d73fc;
+  margin-top: 12px;
+  color: #fff;
+  border: none;
+  transition: padding 1s;
+}
+
+button:enabled {
+  background: #7d73fc;
+}
+
+button:focus {
+  background: #5e42d7;
+}
+
+button:disabled {
+  background: #2a2b33;
+}
+
+button:hover {
+  background: #7d73fc;
+  padding: 12px 24px;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .align-left {
@@ -493,7 +404,7 @@ input {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  content: 'CONTACT US';
+  content: "CONTACT US";
 }
 
 .contact-section form {
@@ -559,7 +470,7 @@ input {
   }
 
   .headline {
-    background-image: url('./images/two-circles.png');
+    background-image: url("./images/two-circles.png");
     background-repeat: no-repeat;
     background-size: contain;
     flex-direction: column;
@@ -636,7 +547,7 @@ input {
   /* works section */
 
   .works-section {
-    background-image: url('./images/Group\ 65@2x.png');
+    background-image: url("./images/Group\ 65@2x.png");
     background-size: contain;
   }
 
@@ -767,7 +678,7 @@ input {
     margin:0 auto;
   }
 
-  .footer .icons ul {
+  .footer > .icons > ul {
     padding: 0;
   }
 
@@ -817,7 +728,7 @@ input {
   /* works section */
 
   .works-section {
-    background-image: url('./images/Group\ 65@2x.png');
+    background-image: url("./images/Group\ 65@2x.png");
     background-size: contain;
   }
 
@@ -908,11 +819,5 @@ input {
 
   .padding {
     padding: 0 40px;
-  }
-}
-
-@media (min-width: 100px) {
-  .menu-container {
-    display: none;
   }
 }
