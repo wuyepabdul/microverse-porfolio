@@ -6,7 +6,7 @@ function lowerCaseValidate(email) {
 
 contactMeForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  const ERROR_MESSAGE = 'Email should be in  lower case';
+  const ERROR_MESSAGE = 'Email should be in lower case';
   const email = document.getElementById('useremail').value;
   const name = document.getElementById('username').value;
   const message = document.getElementById('usermessage').value;
