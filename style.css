@@ -263,6 +263,11 @@ input {
   flex-wrap: wrap;
 }
 
+.newt {
+  color: black;
+}
+
+
 .align-center {
   align-items: center;
   text-align: center;
@@ -397,10 +402,7 @@ button:hover {
     margin-top: 20px;
   }
 
-  .newt {
-    color: black;
-  }
-
+  
   .hide {
     display: inline-block;
   }
