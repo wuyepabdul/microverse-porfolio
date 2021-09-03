@@ -95,6 +95,110 @@ input {
   padding: 0 10px;
 }
 
+
+  
+/* Modal */
+
+.modal-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-image {
+  background-image: url('./images/two-circles.png');
+  height: 100vh;
+  width: 100%;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+}
+
+.modal-header {
+  width: 100%;
+  height: 20%;
+  margin-right: 10px;
+}
+
+.modal-header h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+}
+
+.modal-header p {
+  padding-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-modal {
+  padding: 12px 20px;
+  background-color: #7d73fc;
+  margin: 30px 20px;
+}
+
+.modal-bg-color {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.modal-body {
+  position: absolute;
+  top: 0;
+  width: 95%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-image {
+  width: 100%;
+  height: 300px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-text {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.modal-body ul {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.modal-button {
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-button button {
+  margin: 20px 20px;
+}
+
 .menu-links {
   font-weight: 500;
   font-size: 24px;
