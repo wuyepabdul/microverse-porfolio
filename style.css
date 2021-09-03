@@ -143,8 +143,6 @@ input {
   display: inline-block;
 }
 
-
-
 .works-section h1 {
   max-width: 220px;
   padding: 0 24px;
@@ -152,11 +150,9 @@ input {
   font-size: 42px;
 }
 
-
 .contact-text-wraper{
   margin-bottom: 30px;
 }
-
 
 .contact-section .p-text {
   font-size: 16px;
@@ -175,8 +171,6 @@ input {
 .row-reverse {
   flex-direction: row-reverse;
 }
-
-
 
 .main-container {
   position: relative;
@@ -375,8 +369,6 @@ button:hover {
   margin: 0;
 }
 
-
-
 .intro > div > ul {
   padding-left: 0;
 }
@@ -424,8 +416,6 @@ button:hover {
 .footer > .icons > ul {
   padding: 0;
 }
-
-
 
 /* MEDIA QUERIES */
 
@@ -589,8 +579,6 @@ button:hover {
     font-size: 20px;
   }
 
-
-
   .icons img {
     font-size: 30px;
     width: 20px;
@@ -615,8 +603,6 @@ button:hover {
     margin: 0 auto;
     justify-content: center;
   }
-
-
 
   .contact-section .p-textorm {
     flex-direction: column;
