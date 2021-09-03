@@ -244,9 +244,9 @@
         id="contact-section"
         class="contact-section d-grid align-center padding"
       >
-        <div>
+        <div class="contact-text-wraper">
           <h1 class="reference"></h1>
-          <p>
+          <p class="p-text">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it
@@ -257,10 +257,11 @@
             class="d-flex align-center"
             action="https://formspree.io/f/xoqypwwp"
             method="POST"
+            id="contactme"
           >
             <input
               class="full-width input-padding align-center newt"
-              type="email"
+              type="text"
               name="name"
               minlength="30"
               required
@@ -270,24 +271,28 @@
               class="full-width input-padding align-center newt"
               type="email"
               name="email"
+              id="email"
               required
               placeholder="jeremy@gmail.com "
             />
             <textarea
               class="full-width input-padding align-center newt"
               name="message"
-              minlength="500"
+              maxlength="500"
               required
               placeholder="Enter text here"
             ></textarea>
-            <button type="submit">Send</button>
+            <div class="form-footer d-flex align-center">
+              <button type="submit">Send</button>
+              <p class="p-error" id="p-error"> </p>
+            </div>
           </form>
         </div>
       </section>
 
       <!-- footer -->
       <footer class="footer">
-        <div class="icons align-center">
+        <div class="icons d-flex ">
           <ul class="d-flex align-center space-between">
             <li>
               <a href="#"><img src="./icons/github.png" alt="image" /></a>
@@ -311,8 +316,7 @@
     </main>
 
     <script src="./app.js"></script>
-    <script>
-      projects;
-    </script>
+    <script src="formvalidation.js"></script>
+
   </body>
 </html>

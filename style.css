@@ -89,7 +89,188 @@ input {
   margin: 0 auto;
 }
 
-.footer > .icons {
+.social-media li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+button {
+  padding: 12px;
+  font-weight: 500;
+  background-color: #7d73fc;
+  margin-top: 12px;
+  color: #fff;
+  border: none;
+  transition: padding 1s;
+}
+
+button:enabled {
+  background: #7d73fc;
+}
+
+button:focus {
+  background: #5e42d7;
+}
+
+button:disabled {
+  background: #2a2b33;
+}
+
+button:hover {
+  background: #7d73fc;
+  padding: 12px 24px;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+/* Modal */
+
+.modal-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-image {
+  background-image: url('./images/two-circles.png');
+  height: 100vh;
+  width: 100%;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+}
+
+.modal-header {
+  width: 100%;
+  height: 20%;
+  margin-right: 10px;
+}
+
+.modal-header h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+}
+
+.modal-header p {
+  padding-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-modal {
+  padding: 12px 20px;
+  background-color: #7d73fc;
+  margin: 30px 20px;
+}
+
+.modal-bg-color {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.modal-body {
+  position: absolute;
+  top: 0;
+  width: 95%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-image {
+  width: 100%;
+  height: 300px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-text {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.modal-body ul {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.modal-button {
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-button button {
+  margin: 20px 20px;
+}
+
+.menu-links {
+  font-weight: 500;
+  font-size: 24px;
+  padding: 0 40px;
+  margin: 0;
+}
+
+.menu-links ul li {
+  padding: 0 60px;
+}
+
+.bars > ul > li {
+  padding: 0 15px;
+}
+
+.social-media ul {
+  margin: 0 auto;
+  align-items: center;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.tags > ul {
+  color: #fff;
+  padding-left: 0;
+}
+
+.tags > ul > li {
+  border-right: 1px solid #696364;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.lists > div > ul {
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 24px;
+  width: 123px;
+}
+
+.intro > div > ul {
+  padding-left: 0;
+}
+
+.footer .icons {
   max-width: 200px;
   display: flex;
   align-items: center;
@@ -98,11 +279,7 @@ input {
   margin: 0 auto;
 }
 
-.footer > .icons > ul {
-  padding: 0;
-}
-
-.footer > .icons > li {
+.footer .icons li {
   padding: 0 5px;
 }
 
@@ -119,16 +296,6 @@ input {
   font-weight: 500;
   font-size: 19px;
   line-height: 16px;
-}
-
-.social-media li {
-  list-style: none;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.bars > ul > li {
-  padding: 0 15px;
 }
 
 .padding-round {
@@ -150,7 +317,7 @@ input {
   font-size: 42px;
 }
 
-.contact-text-wraper{
+.contact-text-wraper {
   margin-bottom: 30px;
 }
 
@@ -201,17 +368,6 @@ input {
   padding-top: 20px;
 }
 
-.menu-links {
-  font-weight: 500;
-  font-size: 24px;
-  padding: 0 40px;
-  margin: 0;
-}
-
-.menu-links ul li {
-  padding: 0 60px;
-}
-
 /* headline */
 
 .headline {
@@ -242,38 +398,12 @@ input {
   display: block;
 }
 
-.social-media ul {
-  margin: 0 auto;
-  align-items: center;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
 .lists {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
   text-align: start;
   letter-spacing: 0.37px;
-}
-
-.tags > ul {
-  color: #fff;
-  padding-left: 0;
-}
-
-.tags > ul > li {
-  border-right: 1px solid #696364;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px;
-}
-
-.lists > div > ul {
-  flex-wrap: wrap;
-  font-size: 15px;
-  line-height: 24px;
-  width: 123px;
 }
 
 .lists > div > ul > li:first-child {
@@ -287,7 +417,6 @@ input {
 .newt {
   color: black;
 }
-
 
 .d-flex {
   display: flex;
@@ -310,6 +439,10 @@ input {
   background-size: cover;
 }
 
+.works-section article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .card {
   margin-bottom: 50px;
   transition: padding 2s;
@@ -322,34 +455,6 @@ input {
 
 .card-image img:hover {
   padding: 7px;
-}
-
-button {
-  padding: 12px;
-  font-weight: 500;
-  background-color: #7d73fc;
-  margin-top: 12px;
-  color: #fff;
-  border: none;
-  transition: padding 1s;
-}
-
-button:enabled {
-  background: #7d73fc;
-}
-
-button:focus {
-  background: #5e42d7;
-}
-
-button:disabled {
-  background: #2a2b33;
-}
-
-button:hover {
-  background: #7d73fc;
-  padding: 12px 24px;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .align-left {
@@ -367,12 +472,6 @@ button:hover {
 
 .about h1 {
   margin: 0;
-}
-
-
-
-.intro > div > ul {
-  padding-left: 0;
 }
 
 /* contact section */
@@ -401,7 +500,7 @@ button:hover {
   height: 148px;
 }
 
-.p-error  {
+.p-error {
   color: red;
   margin-left: 20px;
   align-items: center;
@@ -419,8 +518,6 @@ button:hover {
   padding: 0;
 }
 
-
-
 /* MEDIA QUERIES */
 
 @media (min-width: 980px) {
@@ -432,7 +529,6 @@ button:hover {
     letter-spacing: 0.03em;
     margin-top: 20px;
   }
-
 
   .hide {
     display: inline-block;
@@ -583,8 +679,6 @@ button:hover {
     font-size: 20px;
   }
 
-
-
   .icons img {
     font-size: 30px;
     width: 20px;
@@ -609,8 +703,6 @@ button:hover {
     margin: 0 auto;
     justify-content: center;
   }
-
-
 
   .contact-section .p-textorm {
     flex-direction: column;
@@ -648,11 +740,11 @@ button:hover {
   }
 
   .footer .icons {
-    max-width:400px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .footer > .icons > ul {
@@ -750,11 +842,11 @@ button:hover {
   }
 
   .footer .icons {
-    max-width:400px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .footer > .icons > ul {
