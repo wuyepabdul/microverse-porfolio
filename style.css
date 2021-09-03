@@ -648,7 +648,7 @@ button:hover {
   }
 
   .footer .icons {
-    max-width:400px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
@@ -750,7 +750,7 @@ button:hover {
   }
 
   .footer .icons {
-    max-width:400px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
