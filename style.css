@@ -83,23 +83,13 @@ input {
   padding: 5px 24px;
 }
 
-.social-media li {
-  list-style: none;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.bars > ul > li {
-  padding: 0 15px;
-}
-
 .icons {
   max-width: 200px;
   align-items: center;
   margin: 0 auto;
 }
 
-.footer  .icons {
+.footer .icons {
   max-width: 200px;
   display: flex;
   align-items: center;
@@ -114,10 +104,6 @@ input {
 
 .footer .icons li {
   padding: 0 5px;
-}
-
-.padding {
-  padding: 5px 24px;
 }
 
 .d-grid {
@@ -135,7 +121,15 @@ input {
   line-height: 16px;
 }
 
+.social-media li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
 
+.bars > ul > li {
+  padding: 0 15px;
+}
 
 .padding-round {
   padding: 10px 12px 10px 12px;
@@ -375,6 +369,8 @@ button:hover {
   margin: 0;
 }
 
+
+
 .intro > div > ul {
   padding-left: 0;
 }
@@ -422,6 +418,8 @@ button:hover {
 .footer > .icons > ul {
   padding: 0;
 }
+
+
 
 /* MEDIA QUERIES */
 
@@ -585,6 +583,8 @@ button:hover {
     font-size: 20px;
   }
 
+
+
   .icons img {
     font-size: 30px;
     width: 20px;
@@ -609,6 +609,8 @@ button:hover {
     margin: 0 auto;
     justify-content: center;
   }
+
+
 
   .contact-section .p-textorm {
     flex-direction: column;
