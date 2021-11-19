@@ -24,40 +24,40 @@ menuLinks.addEventListener('click', closeMenuList);
 const projectsList = [
   {
     id: '1',
-    name: 'Multi-Post Stories',
+    name: 'Todo List',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    image: './images/works.png',
+      'A Todo list app that creates a list of todos, saves, retrieves and deletes a todo from localstorage. Built with JavaScript, HTML, CSS',
+    image: './images/todo-project.png',
     technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
-    viewLive: 'link',
-    viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
+    viewLive: 'https://wuyepabdul.github.io/Todo-List/',
+    viewSource: 'https://github.com/wuyepabdul/Todo-List',
   },
   {
     id: '2',
-    name: 'Multi-Post Stories',
+    name: 'Awesome Books',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    image: './images/works.png',
+      'A book keeping app that creates a book, saves, retrieves and deletes a book from localstorage. Built with JavaScript, HTML, CSS',
+    image: './images/awesomeBooks.png',
     technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
-    viewLive: 'link',
-    viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
+    viewLive: ' https://wuyepabdul.github.io/awesome-books/ ',
+    viewSource: 'https://github.com/wuyepabdul/awesome-books',
   },
   {
     id: '3',
-    name: 'Multi-Post Stories',
+    name: 'Jos-Dev Hackathon',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    image: './images/works.png',
+      'A Hackathon organized for Software Developers in Plateau State. Built using JavaScript, CSS and HTML',
+    image: './images/hackjos.png',
     technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
-    viewLive: 'link',
-    viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
+    viewLive: 'https://wuyepabdul.github.io/jos-dev-hackathon/',
+    viewSource: 'https://github.com/wuyepabdul/jos-dev-hackathon',
   },
   {
     id: '4',
     name: 'Multi-Post Stories',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    image: './images/works.png',
+    image: './images/portfolio.png',
     technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
     viewLive: 'link',
     viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
@@ -88,7 +88,7 @@ projectsList.forEach((project) => {
     <button class="open-modal align-left" type="submit">See Project</button>
   </div>
 </div>
-</article>,`;
+</article>`;
 });
 
 document.getElementById('portfolio-section').innerHTML = html;
