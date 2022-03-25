@@ -28,17 +28,17 @@ const projectsList = [
     description:
       'This web application is built for a company that allows registered users to lease a home, view their leases, and delete their leases. Built with Ruby on Rails and React Built with Ruby on Rails, React, JavaScript, HTML, CSS',
     image: './images/lease-home-list.png',
-    technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
+    technologies: ['React', 'Ruby on Rails', 'css', 'Github'],
     viewLive: 'https://wuyepabdul.github.io/Todo-List/',
     viewSource: 'https://github.com/wuyepabdul/Todo-List',
   },
   {
     id: '2',
-    name: 'Awesome Books',
+    name: 'E-Commerce Application',
     description:
-      'A book keeping app that creates a book, saves, retrieves and deletes a book from localstorage. Built with JavaScript, HTML, CSS',
-    image: './images/awesomeBooks.png',
-    technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
+      'An e-commerce application that allows the purchase of accessories for registered users. It allows users to also create orders and view their order histories.. Built with JavaScript, HTML, CSS',
+    image: './images/accessories-home.png',
+    technologies: ['NodeJS', 'React', 'Bootstrap', 'Github', 'MongoDB'],
     viewLive: ' https://wuyepabdul.github.io/awesome-books/ ',
     viewSource: 'https://github.com/wuyepabdul/awesome-books',
   },
