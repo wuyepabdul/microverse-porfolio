@@ -48,19 +48,19 @@ const projectsList = [
     description:
       'A Hackathon organized for Software Developers in Plateau State. Built using JavaScript, CSS and HTML',
     image: './images/hackjos.png',
-    technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
+    technologies: ['html', 'css', 'JavaScript', 'Github'],
     viewLive: 'https://wuyepabdul.github.io/jos-dev-hackathon/',
     viewSource: 'https://github.com/wuyepabdul/jos-dev-hackathon',
   },
   {
     id: '4',
-    name: 'Multi-Post Stories',
+    name: 'Urbanstudent',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
+      'An immersive virtual learning platform where teachers and students can connect virtually in real time. Still in Development..',
     image: './images/portfolio.png',
-    technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
-    viewLive: 'link',
-    viewSource: 'https://github.com/wuyepabdul/microverse-porfolio',
+    technologies: ['WebRTC', 'React', 'NodeJS', 'Gitlab'],
+    viewLive: 'https://urbanstudent-webrtc.herokuapp.com/',
+    viewSource: 'https://gitlab.com/urban-students/urbanstudents-webrtc-frontend',
   },
 ];
 
