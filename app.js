@@ -29,8 +29,8 @@ const projectsList = [
       'This web application is built for a company that allows registered users to lease a home, view their leases, and delete their leases. Built with Ruby on Rails and React Built with Ruby on Rails, React, JavaScript, HTML, CSS',
     image: './images/lease-home-list.png',
     technologies: ['React', 'Ruby on Rails', 'css', 'Github'],
-    viewLive: 'https://wuyepabdul.github.io/Todo-List/',
-    viewSource: 'https://github.com/wuyepabdul/Todo-List',
+    viewLive: 'https://duls-lease-home.herokuapp.com/',
+    viewSource: 'https://github.com/HENRYKC24/lease-a-home-frontend',
   },
   {
     id: '2',
@@ -39,8 +39,8 @@ const projectsList = [
       'An e-commerce application that allows the purchase of accessories for registered users. It allows users to also create orders and view their order histories.. Built with JavaScript, HTML, CSS',
     image: './images/accessories-home.png',
     technologies: ['NodeJS', 'React', 'Bootstrap', 'Github', 'MongoDB'],
-    viewLive: ' https://wuyepabdul.github.io/awesome-books/ ',
-    viewSource: 'https://github.com/wuyepabdul/awesome-books',
+    viewLive: 'https://duls-proshop.herokuapp.com/',
+    viewSource: 'https://github.com/wuyepabdul/accessories-ecommerce-mern',
   },
   {
     id: '3',
@@ -57,7 +57,7 @@ const projectsList = [
     name: 'Urbanstudent',
     description:
       'An immersive virtual learning platform where teachers and students can connect virtually in real time. Still in Development..',
-    image: './images/portfolio.png',
+    image: './images/urbanstudent.png',
     technologies: ['WebRTC', 'React', 'NodeJS', 'Gitlab'],
     viewLive: 'https://urbanstudent-webrtc.herokuapp.com/',
     viewSource: 'https://gitlab.com/urban-students/urbanstudents-webrtc-frontend',
