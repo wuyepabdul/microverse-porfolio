@@ -24,10 +24,10 @@ menuLinks.addEventListener('click', closeMenuList);
 const projectsList = [
   {
     id: '1',
-    name: 'Todo List',
+    name: 'Lease a Home',
     description:
-      'A Todo list app that creates a list of todos, saves, retrieves and deletes a todo from localstorage. Built with JavaScript, HTML, CSS',
-    image: './images/todo-project.png',
+      'This web application is built for a company that allows registered users to lease a home, view their leases, and delete their leases. Built with Ruby on Rails and React Built with Ruby on Rails, React, JavaScript, HTML, CSS',
+    image: './images/lease-home-list.png',
     technologies: ['html', 'Ruby on Rails', 'css', 'Github'],
     viewLive: 'https://wuyepabdul.github.io/Todo-List/',
     viewSource: 'https://github.com/wuyepabdul/Todo-List',
