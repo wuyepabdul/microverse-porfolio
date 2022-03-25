@@ -86,6 +86,8 @@ projectsList.forEach((project) => {
   </div>
   <div class="card-button align-left">
     <button class="open-modal align-left" type="submit">See Project</button>
+    <p hidden>${project.viewLive}</p>
+    <p hidden>${project.viewSource}</p>
   </div>
 </div>
 </article>`;
@@ -99,9 +101,12 @@ const modalSection = document.querySelector('.modal-section');
 const modalClose = document.querySelector('.close-modal');
 const mainContainer = document.querySelector('.main-container');
 
-function showModal() {
+function showModal(img) {
+  console.log('img',img)
   modalSection.style.display = 'flex';
   mainContainer.style.display = 'none';
+  let modalImage = document.querySelector('.modal-image');
+  console.log('moadal image', modalImage.children[0].src);
 }
 
 function closeModal() {
@@ -110,7 +115,20 @@ function closeModal() {
 }
 
 modalBtn.forEach((btn) => {
-  btn.addEventListener('click', showModal);
+  const img = btn.parentElement.parentElement.parentElement.children[0].children[0].src
+
+  btn.addEventListener('click', (e) => {
+      modalSection.style.display = 'flex';
+      mainContainer.style.display = 'none';
+      let projectImage = e.target.parentElement.parentElement.parentElement.children[0].children[0].src;
+      let projectLink = e.target.parentElement.children[1].innerHTML
+      let projectSource = e.target.parentElement.children[2].innerHTML
+      let modalImage = document.querySelector('.modal-image');
+      modalImage.children[0].src = projectImage;
+      modalImage.parentElement.lastElementChild.firstElementChild.href = projectLink
+      modalImage.parentElement.lastElementChild.lastElementChild.href = projectSource
+      // console.log('modal', modalImage.parentElement.lastElementChild.lastElementChild)
+  });
 });
 
 modalClose.addEventListener('click', closeModal);
